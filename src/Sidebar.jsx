@@ -100,7 +100,7 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                 </div>
                 <div className="menu-item-div">
                   <img
-                    src="/abhishekkabi/more.png"
+                    src="/abhishek.kabi.26/more.png"
                     style={{ height: "25px", width: "25px" }}
                   />
                   <p>More</p>

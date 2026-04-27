@@ -14,7 +14,7 @@ function Banner() {
   return (
     <div className="banner-container">
       <img
-        src="/abhishekkabi/Untitled.png"
+        src="/abhishek.kabi.26/Untitled.png"
         className="banner-image"
         alt="Banner"
       />

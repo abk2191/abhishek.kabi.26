@@ -5,7 +5,7 @@ function MusicPlayer() {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    audioRef.current = new Audio("/abhishekkabi/song.mp3");
+    audioRef.current = new Audio("/abhishek.kabi.26/song.mp3");
     audioRef.current.loop = true;
 
     return () => {

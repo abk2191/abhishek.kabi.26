@@ -71,7 +71,7 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                   style={{ cursor: "pointer" }}
                 >
                   <img
-                    src="/abhishekkabi/space-nobg.png"
+                    src="/abhishek.kabi.26/space-nobg.png"
                     style={{ height: "25px", width: "25px" }}
                   />
                   <p>Space. (PWA)</p>
@@ -82,7 +82,7 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                   style={{ cursor: "pointer" }}
                 >
                   <img
-                    src="/abhishekkabi/proxima-nobg.png"
+                    src="/abhishek.kabi.26/proxima-nobg.png"
                     style={{ height: "25px", width: "25px" }}
                   />
                   <p>Proxima Calculator (Native)</p>
@@ -93,7 +93,7 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                   style={{ cursor: "pointer" }}
                 >
                   <img
-                    src="/abhishekkabi/sp-nobg.png"
+                    src="/abhishek.kabi.26/sp-nobg.png"
                     style={{ height: "25px", width: "25px" }}
                   />
                   <p>ScratchPad (Native)</p>

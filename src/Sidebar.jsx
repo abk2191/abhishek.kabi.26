@@ -135,6 +135,7 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
         <div className="source-code-div-wrapper">
           <div
             className="source-code-div"
+            onClick={() => handleNavigation("/sourcecode")}
             style={{ color: "navy", fontWeight: "bold" }}
           >
             <i class="fa-solid fa-code"></i>

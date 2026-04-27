@@ -10,6 +10,7 @@ import Game from "./Game";
 import Andromeda from "./Andromeda";
 import ProximaCalculator from "./ProximaCalculator";
 import ScratchPad from "./ScratchPad";
+import SourceCode from "./SourceCode";
 
 function App() {
   //****************************************************************************************/
@@ -167,6 +168,7 @@ function App() {
           <Route path="/space" element={<Andromeda />} />
           <Route path="/proxima-calculator" element={<ProximaCalculator />} />
           <Route path="/scratchpad" element={<ScratchPad />} />
+          <Route path="/sourcecode" element={<SourceCode />} />
         </Routes>
       </div>
     </Router>

@@ -359,6 +359,8 @@ span {
 .place-holder {
   height: 150px;
   margin-bottom: 30px;
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.9s;
 }
 
 .chevron-icon {

@@ -18,6 +18,8 @@
   --divider-dot-line: rgb(235, 234, 234);
   --border-bottom: transparent;
   --game-color: navy;
+  --menu-color-one: #f4f3f3;
+  --menu-color-two: 1px solid rgb(210, 208, 208);
 }
 
 /* Dark theme - black background */
@@ -36,6 +38,8 @@
   --divider-dot-line: #ffffff;
   --border-bottom: white;
   --game-color: gold;
+  --menu-color-one: #1a1a1a;
+  --menu-color-two: 1px solid #403f3f;
 }
 
 .andromeda-wrapper {
@@ -190,7 +194,7 @@ html {
   height: 4px;
   background-color: navy;
   border-radius: 4px;
-  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  /* transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6); */
   transform-origin: center;
 }
 
@@ -354,6 +358,7 @@ span {
 
 .place-holder {
   height: 150px;
+  margin-bottom: 30px;
 }
 
 .chevron-icon {
@@ -1092,7 +1097,7 @@ ul {
 .project-section {
   display: flex;
   flex-direction: column;
-  padding-left: 60px;
+  padding-left: 20px;
   justify-content: left;
   gap: 15px;
 }
@@ -1107,6 +1112,54 @@ ul {
   align-items: center;
   justify-content: left;
   gap: 7px;
+  border-radius: 8px;
+  background-color: var(--menu-color-one);
+  border: var(--menu-color-two);
+  width: 90%;
+  padding: 3px;
+  font-weight: bold;
+  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
+.image-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.image-cont-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: rgb(234, 208, 234);
+}
+
+.image-cont-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: rgb(162, 231, 161);
+}
+
+.image-cont-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: rgb(230, 230, 155);
 }
 
 .Contact-container {

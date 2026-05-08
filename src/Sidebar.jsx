@@ -70,10 +70,12 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                   onClick={() => handleNavigation("/space")}
                   style={{ cursor: "pointer" }}
                 >
-                  <img
-                    src="/abhishek.kabi.26/space-nobg.png"
-                    style={{ height: "25px", width: "25px" }}
-                  />
+                  <div className="image-cont">
+                    <img
+                      src="/abhishek.kabi.26/space-nobg.png"
+                      style={{ height: "25px", width: "25px" }}
+                    />
+                  </div>
                   <p>Space. (PWA)</p>
                 </div>
                 <div
@@ -81,10 +83,12 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                   onClick={() => handleNavigation("/proxima-calculator")}
                   style={{ cursor: "pointer" }}
                 >
-                  <img
-                    src="/abhishek.kabi.26/proxima-nobg.png"
-                    style={{ height: "25px", width: "25px" }}
-                  />
+                  <div className="image-cont-2">
+                    <img
+                      src="/abhishek.kabi.26/proxima-nobg.png"
+                      style={{ height: "25px", width: "25px" }}
+                    />{" "}
+                  </div>
                   <p>Proxima Calculator (Native)</p>
                 </div>
                 <div
@@ -92,17 +96,24 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                   onClick={() => handleNavigation("/scratchpad")}
                   style={{ cursor: "pointer" }}
                 >
-                  <img
-                    src="/abhishek.kabi.26/sp-nobg.png"
-                    style={{ height: "25px", width: "25px" }}
-                  />
+                  <div className="image-cont-3">
+                    <img
+                      src="/abhishek.kabi.26/sp-nobg.png"
+                      style={{ height: "25px", width: "25px" }}
+                    />
+                  </div>
                   <p>ScratchPad (Native)</p>
                 </div>
                 <div className="menu-item-div">
-                  <img
-                    src="/abhishek.kabi.26/more.png"
-                    style={{ height: "25px", width: "25px" }}
-                  />
+                  <div className="image-cont-4">
+                    <img
+                      src="/abhishek.kabi.26/more.png"
+                      style={{
+                        height: "25px",
+                        width: "25px",
+                      }}
+                    />
+                  </div>
                   <p>More</p>
                 </div>
               </div>

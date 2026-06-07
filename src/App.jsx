@@ -23,6 +23,7 @@ function App() {
   const sidebarRef = useRef(null);
   const hamburgerRef = useRef(null);
   const animationTimeoutRef = useRef(null);
+  const [projectsClicked, setProjectsClicked] = useState(false);
 
   // Cleanup timeouts on unmount
   useEffect(() => {
@@ -149,7 +150,12 @@ function App() {
         />
 
         {shouldRenderSidebar && (
-          <Sidebar sidebarRef={sidebarRef} closeSidebar={closeSidebar} />
+          <Sidebar
+            sidebarRef={sidebarRef}
+            closeSidebar={closeSidebar}
+            setProjectsClicked={setProjectsClicked}
+            projectsClicked={projectsClicked}
+          />
         )}
 
         <Routes>
@@ -158,7 +164,10 @@ function App() {
             element={
               <>
                 <Banner />
-                <Intro />
+                <Intro
+                  toggleSidebar={toggleSidebar}
+                  setProjectsClicked={setProjectsClicked}
+                />
               </>
             }
           />

@@ -1,4 +1,4 @@
-function Intro() {
+function Intro({ toggleSidebar, setProjectsClicked }) {
   return (
     <div className="intro-container">
       <p className="hii">👋 Hi, I am Abhishek.</p>
@@ -18,11 +18,23 @@ function Intro() {
         {/*------------------------------------------------------------------- */}
       </div>
       <div className="placeholder-div">
-        <p className="edu">
-          I completed my education of{" "}
-          <span className="bold">B.tech Information Technology</span> from VIT
-          (Vellore) University.
+        <p className="desc">
+          <span style={{ color: "red" }}>Click</span> on the image below to see
+          my <span style={{ color: "gold" }}>MVP Products.</span>
         </p>
+        <p style={{ textAlign: "center" }}>👇</p>
+        <img
+          src="/abhishek.kabi.26/mvp.png"
+          alt="mvp"
+          className="mvpimg"
+          onClick={() => {
+            toggleSidebar();
+
+            setTimeout(() => {
+              setProjectsClicked(true);
+            }, 800);
+          }}
+        />
       </div>
       {/*------------------------------------------------------------------- */}
       <div className="divider">

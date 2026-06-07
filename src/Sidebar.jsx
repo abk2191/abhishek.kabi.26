@@ -2,8 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Sidebar = ({ sidebarRef, closeSidebar }) => {
-  const [projectsClicked, setProjectsClicked] = useState(false);
+const Sidebar = ({
+  sidebarRef,
+  closeSidebar,
+  projectsClicked,
+  setProjectsClicked,
+}) => {
   const navigate = useNavigate();
 
   const handleNavigation = (path) => {
@@ -72,11 +76,11 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                 >
                   <div className="image-cont">
                     <img
-                      src="/abhishek.kabi.26/space-nobg.png"
-                      style={{ height: "25px", width: "25px" }}
+                      src="/abhishek.kabi.26/theory.png"
+                      style={{ height: "30px", width: "30px" }}
                     />
                   </div>
-                  <p>Space. (PWA)</p>
+                  <p>Theory (React Native)</p>
                 </div>
                 <div
                   className="menu-item-div"
@@ -86,24 +90,12 @@ const Sidebar = ({ sidebarRef, closeSidebar }) => {
                   <div className="image-cont-2">
                     <img
                       src="/abhishek.kabi.26/proxima-nobg.png"
-                      style={{ height: "25px", width: "25px" }}
+                      style={{ height: "40px", width: "40px" }}
                     />{" "}
                   </div>
-                  <p>Proxima Calculator (Native)</p>
+                  <p>Proxima Calculator (React Native)</p>
                 </div>
-                <div
-                  className="menu-item-div"
-                  onClick={() => handleNavigation("/scratchpad")}
-                  style={{ cursor: "pointer" }}
-                >
-                  <div className="image-cont-3">
-                    <img
-                      src="/abhishek.kabi.26/sp-nobg.png"
-                      style={{ height: "25px", width: "25px" }}
-                    />
-                  </div>
-                  <p>ScratchPad (Native)</p>
-                </div>
+
                 <div className="menu-item-div">
                   <div className="image-cont-4">
                     <img

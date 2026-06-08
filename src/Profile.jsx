@@ -3,7 +3,34 @@ function Profile() {
     <>
       <div className="bg-div">
         <div className="Profile-container">
-          <div className="profile-picture"></div>
+          <div className="cover-photo"></div>
+          <div className="profile-body">
+            <div className="profile-header-container">
+              <div className="profile-picture"></div>
+              <div className="profile-name">
+                <p>Abhishek Kabi</p>
+              </div>
+            </div>
+
+            <div className="profile-button">
+              <button className="profile-action-button blue">
+                <i class="fa-solid fa-user-plus white"></i> Add friend
+              </button>
+              <button className="profile-action-button">
+                <i class="fa-brands fa-facebook-messenger"></i> Message
+              </button>
+            </div>
+
+            <div className="info-buttons">
+              <button>Technical Skills</button>
+              <button>Photos</button>
+            </div>
+
+            <div className="personal-dtls">
+              <h2>Personal details</h2>
+            </div>
+          </div>
+          {/* <div className="profile-picture"></div>
           <div className="profile-details">
             <h2 style={{ marginBottom: "30px" }}>Personal Details</h2>
             <div className="grid-class">
@@ -89,7 +116,7 @@ function Profile() {
               </div>
             </div>
           </div>
-          <div style={{ marginTop: "100px" }}></div>
+          <div style={{ marginTop: "100px" }}></div> */}
         </div>
       </div>
     </>

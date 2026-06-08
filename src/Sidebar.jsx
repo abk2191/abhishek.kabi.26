@@ -44,7 +44,7 @@ const Sidebar = ({
             style={{ cursor: "pointer" }}
           >
             <i className="fa-solid fa-circle-user"></i>
-            <p>Profile</p>
+            <p>Profile ✨</p>
           </div>
 
           <div className="flex-box-one">
@@ -77,7 +77,7 @@ const Sidebar = ({
                   <div className="image-cont">
                     <img
                       src="/abhishek.kabi.26/theory.png"
-                      style={{ height: "30px", width: "30px" }}
+                      style={{ height: "52px", width: "52px" }}
                     />
                   </div>
                   <p>Theory (React Native)</p>
@@ -90,7 +90,7 @@ const Sidebar = ({
                   <div className="image-cont-2">
                     <img
                       src="/abhishek.kabi.26/proxima-nobg.png"
-                      style={{ height: "40px", width: "40px" }}
+                      style={{ height: "62px", width: "62px" }}
                     />{" "}
                   </div>
                   <p>Proxima Calculator (React Native)</p>
@@ -101,8 +101,8 @@ const Sidebar = ({
                     <img
                       src="/abhishek.kabi.26/more.png"
                       style={{
-                        height: "25px",
-                        width: "25px",
+                        height: "32px",
+                        width: "32px",
                       }}
                     />
                   </div>

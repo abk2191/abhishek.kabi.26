@@ -123,7 +123,7 @@ html {
 
 .fa-solid,
 .fa-brands {
-  color: var(--icon-color) !important;
+  color: var(--icon-color);
 }
 
 .banner-container {
@@ -730,9 +730,10 @@ p {
 }
 
 .profile-picture-small {
-  height: 20px;
-  width: 20px;
-  border: 3px solid white;
+  height: 50px;
+  width: 50px;
+
+  border: 2px solid white;
   border-radius: 50%;
   background-image: url("/abhishek.kabi.26/Untitled.png"); /* Adjust the path as needed */
   background-size: cover;
@@ -743,12 +744,35 @@ p {
   margin-left: 10px; */
 }
 
+.profile-picture-small-wrapper {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
 .facebook-post {
   border-top: 3px solid rgb(202, 201, 201);
-  border-bottom: 3px solid rgb(202, 201, 201);
+  /* border-bottom: 3px solid rgb(202, 201, 201); */
   width: 100%;
   margin-bottom: 30px;
 }
+
+.post-divider {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(202, 201, 201);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .noposttext {
+  margin-top: 15px;
+} */
 
 .fa-earth-americas {
   color: gray !important;
@@ -758,9 +782,31 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: -170px;
+  margin-left: -130px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.like-count-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+}
+
+.xxx {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #3f3fbf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xxx i {
+  color: white;
+  font-size: 12px;
 }
 
 .post-text {
@@ -772,12 +818,42 @@ p {
   padding: 15px;
 }
 
+.placeholder {
+  height: 30px;
+}
+
+.reaction-buttons-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.reaction-button {
+  display: flex;
+  gap: 15px;
+}
+
+.react-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
 .post-info {
   display: flex;
 
   align-items: center;
 
   justify-content: left;
+  gap: 8px;
+}
+
+.post-dtls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-details {
@@ -1305,10 +1381,11 @@ ul {
   justify-content: left;
   gap: 7px;
   border-radius: 8px;
-  background-color: var(--menu-color-one);
-  border: var(--menu-color-two);
+
+  height: 30px;
   width: 90%;
   padding: 3px;
+  padding-left: 10px;
   font-weight: bold;
   animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 0.5s; /* don't forget to set a duration! */
@@ -1321,7 +1398,7 @@ ul {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background-color: white;
+  background-color: transparent;
 }
 
 .image-cont-2 {
@@ -1331,7 +1408,7 @@ ul {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background-color: white;
+  background-color: transparent;
 }
 
 .image-cont-3 {
@@ -1351,6 +1428,7 @@ ul {
   height: 25px;
   width: 25px;
   border-radius: 50%;
+  border: 2px solid whitesmoke;
   background-color: white;
 }
 

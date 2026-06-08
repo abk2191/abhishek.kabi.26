@@ -645,7 +645,7 @@ p {
 .profile-header-container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .profile-name p {
@@ -679,7 +679,27 @@ p {
 
 .personal-dtls {
   margin-left: 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
 }
+
+.kontainer {
+  display: flex;
+}
+
+.info-btns {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: gray;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+/* .info-btns:active {
+  background-color: #1877f2;
+} */
 
 .blue {
   background-color: #1877f2;
@@ -707,6 +727,57 @@ p {
   border-radius: 50%; /* Optional: makes it circular */
   margin-top: -15px;
   margin-left: 10px;
+}
+
+.profile-picture-small {
+  height: 20px;
+  width: 20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-image: url("/abhishek.kabi.26/Untitled.png"); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%; /* Optional: makes it circular */
+  /* margin-top: -15px;
+  margin-left: 10px; */
+}
+
+.facebook-post {
+  border-top: 3px solid rgb(202, 201, 201);
+  border-bottom: 3px solid rgb(202, 201, 201);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.fa-earth-americas {
+  color: gray !important;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -170px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post-text {
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+
+.tech-skills {
+  padding: 15px;
+}
+
+.post-info {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: left;
 }
 
 .profile-details {
@@ -1079,12 +1150,51 @@ ul {
 }
 
 .profile-body {
-  height: 100vh;
+  height: 100hv;
   width: 100%;
   margin-top: -20px;
   border: 1px solid white;
   border-radius: 20px;
   background-color: white;
+}
+
+.fa-graduation-cap {
+  color: black !important;
+  margin-right: 15px;
+}
+
+.fa-map {
+  color: black !important;
+  margin-right: 10px;
+}
+
+.divider-fb {
+  width: 90%;
+  height: 4px;
+  background-color: rgb(204, 203, 203);
+  margin-bottom: 20px;
+}
+
+.details-holder-icons {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-holder-dtls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-holder-dtls p {
+  font-weight: "bold" !important;
+}
+
+.plastic-wrapper {
+  color: black;
+  margin-top: 30px;
 }
 
 @media (max-width: 768px) {

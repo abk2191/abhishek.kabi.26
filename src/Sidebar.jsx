@@ -159,7 +159,7 @@ const Sidebar = ({
           </div>
         </div>
 
-        <div className="game-div-wrapper">
+        {/* <div className="game-div-wrapper">
           <div className="game-div">
             <i class="fa-solid fa-gamepad"></i>
             <div
@@ -170,9 +170,9 @@ const Sidebar = ({
               Play Color Match
             </div>
           </div>
-          {/* */}
-        </div>
-        <div className="source-code-div-wrapper">
+          
+        </div> */}
+        {/* <div className="source-code-div-wrapper">
           <div
             className="source-code-div"
             onClick={() => handleNavigation("/sourcecode")}
@@ -181,7 +181,7 @@ const Sidebar = ({
             <i class="fa-solid fa-code"></i>
             View Source Code
           </div>
-        </div>
+        </div> */}
 
         <div className="resume-button-container">
           <div>

@@ -586,7 +586,7 @@ p {
   align-items: center;
   justify-content: left;
   padding-left: 15px;
-  gap: 4px;
+  gap: 12px;
   cursor: pointer;
   animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 0.5s; /* don't forget to set a duration! */
@@ -1454,7 +1454,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 7px;
+  gap: 10px;
   border-radius: 8px;
 
   height: 30px;

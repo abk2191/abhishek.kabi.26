@@ -860,9 +860,9 @@ p {
 
 .post-header {
   display: flex;
-  flex-direction: column;
+  padding-left: 15px;
   align-items: center;
-  margin-left: -40px;
+
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -955,7 +955,6 @@ p {
 
   align-items: center;
 
-  justify-content: left;
   gap: 8px;
 }
 
@@ -1434,7 +1433,10 @@ ul {
   }
 
   .post-header {
-    margin-left: -1240px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .info-buttons {

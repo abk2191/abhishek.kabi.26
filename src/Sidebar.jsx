@@ -19,6 +19,12 @@ const Sidebar = ({
     }, 100);
   };
 
+  const [gameMenuClicked, setGameMenuClicked] = useState(false);
+
+  const handleGameMenuClicked = () => {
+    setGameMenuClicked((prev) => !prev);
+  };
+
   return (
     <div
       ref={sidebarRef}
@@ -69,10 +75,16 @@ const Sidebar = ({
           {projectsClicked && (
             <div className="place-holder">
               <div className="project-section">
+                <div className="app--header" style={{ cursor: "pointer" }}>
+                  <div>
+                    <i class="fa-brands fa-google-play"></i>
+                  </div>
+                  <p>Apps:</p>
+                </div>
                 <div
                   className="menu-item-div"
                   onClick={() => handleNavigation("/space")}
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", marginLeft: "12px" }}
                 >
                   <div className="image-cont">
                     <img
@@ -85,7 +97,7 @@ const Sidebar = ({
                 <div
                   className="menu-item-div"
                   onClick={() => handleNavigation("/proxima-calculator")}
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", marginLeft: "12px" }}
                 >
                   <div className="image-cont-2">
                     <img
@@ -96,7 +108,7 @@ const Sidebar = ({
                   <p>Proxima Calculator (React Native)</p>
                 </div>
 
-                <div className="menu-item-div">
+                {/* <div className="menu-item-div">
                   <div className="image-cont-4">
                     <img
                       src="/abhishek.kabi.26/more.png"
@@ -107,7 +119,32 @@ const Sidebar = ({
                     />
                   </div>
                   <p>More</p>
+                </div> */}
+                <div className="flex-box-one">
+                  <i
+                    class="fa-solid fa-gamepad"
+                    onClick={() => handleGameMenuClicked()}
+                  ></i>
+                  <p
+                    onClick={() => handleGameMenuClicked()}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Games:
+                  </p>
+                  <i
+                    className={`fa-solid fa-angle-down chevron-icon ${gameMenuClicked ? "rotated" : ""}`}
+                    style={{ marginTop: "5px", cursor: "pointer" }}
+                    onClick={() => handleGameMenuClicked()}
+                  ></i>
                 </div>
+
+                {gameMenuClicked && (
+                  <div className="game-menu">
+                    <p>1. AI-TicTacToe</p>
+                    <p>2. Wordle</p>
+                    <p>3. Color-Word-Match</p>
+                  </div>
+                )}
               </div>
             </div>
           )}

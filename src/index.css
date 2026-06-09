@@ -357,7 +357,7 @@ span {
 }
 
 .place-holder {
-  height: 150px;
+  height: 220px;
   margin-bottom: 30px;
 }
 
@@ -570,13 +570,26 @@ p {
   font-size: 25px;
 }
 
+.app--header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 15px;
+  gap: 5px;
+  margin-bottom: -12px;
+  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
 .flex-box-one {
   display: flex;
   align-items: center;
   justify-content: left;
   padding-left: 15px;
-  gap: 15px;
+  gap: 4px;
   cursor: pointer;
+  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s; /* don't forget to set a duration! */
 }
 
 * {
@@ -1362,6 +1375,17 @@ ul {
   }
 }
 
+@media (min-width: 769px) {
+  .profile-button {
+    justify-content: left;
+    margin-left: 18px;
+  }
+
+  .post-header {
+    margin-left: -1230px;
+  }
+}
+
 /********************************************************************************/
 
 .game-div {
@@ -1412,6 +1436,13 @@ ul {
   padding-left: 20px;
   justify-content: left;
   gap: 15px;
+}
+
+.game-menu {
+  margin-left: 45px;
+  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s; /* don't forget to set a duration! */
+  height: 200px;
 }
 
 .project-section p {

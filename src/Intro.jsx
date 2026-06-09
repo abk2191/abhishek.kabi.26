@@ -1,4 +1,4 @@
-function Intro({ toggleSidebar, setProjectsClicked }) {
+function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
   return (
     <div className="intro-container">
       <p className="hii">👋 Hi, I am Abhishek.</p>
@@ -31,6 +31,7 @@ function Intro({ toggleSidebar, setProjectsClicked }) {
             toggleSidebar();
 
             setTimeout(() => {
+              setShouldRender(true);
               setProjectsClicked(true);
             }, 800);
           }}

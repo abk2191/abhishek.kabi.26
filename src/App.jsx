@@ -20,10 +20,11 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
+  const [projectsClicked, setProjectsClicked] = useState(false);
   const sidebarRef = useRef(null);
   const hamburgerRef = useRef(null);
   const animationTimeoutRef = useRef(null);
-  const [projectsClicked, setProjectsClicked] = useState(false);
 
   // Cleanup timeouts on unmount
   useEffect(() => {
@@ -153,8 +154,10 @@ function App() {
           <Sidebar
             sidebarRef={sidebarRef}
             closeSidebar={closeSidebar}
-            setProjectsClicked={setProjectsClicked}
+            shouldRender={shouldRender}
+            setShouldRender={setShouldRender}
             projectsClicked={projectsClicked}
+            setProjectsClicked={setProjectsClicked}
           />
         )}
 
@@ -166,6 +169,8 @@ function App() {
                 <Banner />
                 <Intro
                   toggleSidebar={toggleSidebar}
+                  shouldRender={shouldRender}
+                  setShouldRender={setShouldRender}
                   setProjectsClicked={setProjectsClicked}
                 />
               </>

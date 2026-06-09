@@ -20,10 +20,17 @@
   --game-color: navy;
   --menu-color-one: #f4f3f3;
   --menu-color-two: 1px solid rgb(210, 208, 208);
+  --gplay: red;
+  --text-profile: black;
+  --postdivider: rgb(202, 201, 201);
+  --prof-btn-msg: rgb(228, 225, 225);
 }
 
 /* Dark theme - black background */
 [data-theme="dark"] {
+  --postdivider: #3a3a3a;
+  --text-profile: white;
+  --gplay: green;
   --bg-primary: black;
   --bg-secondary: black;
   --text-color: #ffffff;
@@ -40,6 +47,7 @@
   --game-color: gold;
   --menu-color-one: #1a1a1a;
   --menu-color-two: 1px solid #403f3f;
+  --prof-btn-msg: #464646;
 }
 
 .andromeda-wrapper {
@@ -357,8 +365,12 @@ span {
 }
 
 .place-holder {
-  height: 220px;
-  margin-bottom: 30px;
+  height: 120px;
+  margin-bottom: 190px;
+}
+
+.gplay {
+  color: var(--gplay);
 }
 
 .chevron-icon {
@@ -577,8 +589,8 @@ p {
   margin-left: 15px;
   gap: 5px;
   margin-bottom: -12px;
-  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.5s; /* don't forget to set a duration! */
+  /* animation: slideInDown; 
+  animation-duration: 0.5s;  */
 }
 
 .flex-box-one {
@@ -590,6 +602,15 @@ p {
   cursor: pointer;
   animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
+.aaaaaa {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 15px;
+  gap: 12px;
+  cursor: pointer;
 }
 
 * {
@@ -665,6 +686,7 @@ p {
   font-weight: bold;
   font-family: "Inter", sans-serif;
   font-size: 20px;
+  color: var(--text-profile);
 }
 
 .profile-button {
@@ -682,6 +704,11 @@ p {
   border: none;
 }
 
+.themed {
+  background-color: var(--prof-btn-msg);
+  color: var(--text-profile);
+}
+
 .info-buttons {
   display: flex;
   align-items: center;
@@ -695,6 +722,19 @@ p {
   color: black;
   display: flex;
   flex-direction: column;
+}
+
+.personal-dtls h2,
+p {
+  color: var(--text-profile);
+}
+
+.flex-row p {
+  color: var(--text-profile);
+}
+
+.proficon {
+  color: var(--text-profile) !important;
 }
 
 .kontainer {
@@ -724,14 +764,14 @@ p {
 }
 
 .fa-facebook-messenger {
-  color: black !important;
+  color: var(--text-profile);
 }
 
 .profile-picture {
   margin-top: 28px;
   height: 100px;
   width: 100px;
-  border: 3px solid white;
+  border: 3px solid var(--bg-primary);
   border-radius: 50%;
   background-image: url("/abhishek.kabi.26/Untitled.png"); /* Adjust the path as needed */
   background-size: cover;
@@ -791,7 +831,7 @@ p {
 .post-divider {
   height: 70px;
   width: 100%;
-  background-color: rgb(202, 201, 201);
+  background-color: var(--postdivider);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1286,18 +1326,16 @@ ul {
   height: 100hv;
   width: 100%;
   margin-top: -20px;
-  border: 1px solid white;
+  border: 1px solid var(--bg-primary);
   border-radius: 20px;
-  background-color: white;
+  background-color: var(--bg-primary);
 }
 
 .fa-graduation-cap {
-  color: black !important;
   margin-right: 15px;
 }
 
 .fa-map {
-  color: black !important;
   margin-right: 10px;
 }
 
@@ -1422,10 +1460,6 @@ ul {
   color: var(--game-color) !important;
 }
 
-.fa-gamepad {
-  color: var(--game-color) !important;
-}
-
 .fa-code {
   color: var(--game-color) !important;
 }
@@ -1440,8 +1474,7 @@ ul {
 
 .game-menu {
   margin-left: 45px;
-  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.5s; /* don't forget to set a duration! */
+
   height: 200px;
 }
 
@@ -1462,8 +1495,6 @@ ul {
   padding: 3px;
   padding-left: 10px;
   font-weight: bold;
-  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.5s; /* don't forget to set a duration! */
 }
 
 .image-cont {

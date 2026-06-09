@@ -5,8 +5,10 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = ({
   sidebarRef,
   closeSidebar,
-  projectsClicked,
+  shouldRender,
+  setShouldRender,
   setProjectsClicked,
+  projectsClicked,
 }) => {
   const navigate = useNavigate();
 
@@ -20,9 +22,33 @@ const Sidebar = ({
   };
 
   const [gameMenuClicked, setGameMenuClicked] = useState(false);
+  // const [projectsClicked, setProjectsClicked] = useState(false);
+
+  const [shouldRenderGM, setShouldRenderGM] = useState(false);
+  const handleProjectMenuClick = () => {
+    if (!projectsClicked) {
+      setShouldRender(true);
+      setProjectsClicked(true);
+    } else {
+      setProjectsClicked(false);
+
+      setTimeout(() => {
+        setShouldRender(false);
+      }, 270); // animation duration
+    }
+  };
 
   const handleGameMenuClicked = () => {
-    setGameMenuClicked((prev) => !prev);
+    if (!gameMenuClicked) {
+      setShouldRenderGM(true);
+      setGameMenuClicked(true);
+    } else {
+      setGameMenuClicked(false);
+
+      setTimeout(() => {
+        setShouldRenderGM(false);
+      }, 500);
+    }
   };
 
   return (
@@ -56,11 +82,11 @@ const Sidebar = ({
           <div className="flex-box-one">
             <i
               className="fa-solid fa-diagram-project"
-              onClick={() => setProjectsClicked((prev) => !prev)}
+              onClick={() => handleProjectMenuClick()}
               style={{ cursor: "pointer" }}
             ></i>
             <p
-              onClick={() => setProjectsClicked((prev) => !prev)}
+              onClick={() => handleProjectMenuClick()}
               style={{ cursor: "pointer" }}
             >
               Projects
@@ -68,21 +94,32 @@ const Sidebar = ({
             <i
               className={`fa-solid fa-angle-down chevron-icon ${projectsClicked ? "rotated" : ""}`}
               style={{ marginTop: "5px", cursor: "pointer" }}
-              onClick={() => setProjectsClicked((prev) => !prev)}
+              onClick={() => handleProjectMenuClick()}
             ></i>
           </div>
 
-          {projectsClicked && (
+          {shouldRender && (
             <div className="place-holder">
               <div className="project-section">
-                <div className="app--header" style={{ cursor: "pointer" }}>
+                <div
+                  className={`app--header animate__animated ${
+                    projectsClicked
+                      ? "animate__slideInDown"
+                      : "animate__slideOutUp"
+                  }`}
+                  style={{ cursor: "pointer" }}
+                >
                   <div>
-                    <i class="fa-brands fa-google-play"></i>
+                    <i class="fa-brands fa-google-play gplay"></i>
                   </div>
-                  <p>Apps:</p>
+                  <p>Apps</p>
                 </div>
                 <div
-                  className="menu-item-div"
+                  className={`menu-item-div animate__animated ${
+                    projectsClicked
+                      ? "animate__slideInDown"
+                      : "animate__slideOutUp"
+                  }`}
                   onClick={() => handleNavigation("/space")}
                   style={{ cursor: "pointer", marginLeft: "12px" }}
                 >
@@ -95,7 +132,11 @@ const Sidebar = ({
                   <p>Theory (React Native)</p>
                 </div>
                 <div
-                  className="menu-item-div"
+                  className={`menu-item-div animate__animated ${
+                    projectsClicked
+                      ? "animate__slideInDown"
+                      : "animate__slideOutUp"
+                  }`}
                   onClick={() => handleNavigation("/proxima-calculator")}
                   style={{ cursor: "pointer", marginLeft: "12px" }}
                 >
@@ -120,31 +161,97 @@ const Sidebar = ({
                   </div>
                   <p>More</p>
                 </div> */}
-                <div className="flex-box-one">
+                <div
+                  className={`aaaaaa animate__animated ${
+                    projectsClicked
+                      ? "animate__slideInDown"
+                      : "animate__slideOutUp"
+                  }`}
+                >
                   <i
-                    class="fa-solid fa-gamepad"
-                    onClick={() => handleGameMenuClicked()}
+                    class="fa-solid fa-gamepad gplay"
+                    onClick={() => {
+                      handleGameMenuClicked();
+                    }}
                   ></i>
                   <p
-                    onClick={() => handleGameMenuClicked()}
+                    onClick={() => {
+                      handleGameMenuClicked();
+                    }}
                     style={{ cursor: "pointer" }}
                   >
-                    Games:
+                    Games
                   </p>
-                  <i
-                    className={`fa-solid fa-angle-down chevron-icon ${gameMenuClicked ? "rotated" : ""}`}
-                    style={{ marginTop: "5px", cursor: "pointer" }}
-                    onClick={() => handleGameMenuClicked()}
-                  ></i>
+                </div>
+                <div
+                  className={`menu-item-div animate__animated ${
+                    projectsClicked
+                      ? "animate__slideInDown"
+                      : "animate__slideOutUp"
+                  }`}
+                  // onClick={() => handleNavigation("/space")}
+                  style={{ cursor: "pointer", marginLeft: "12px" }}
+                >
+                  <div className="image-cont">
+                    <img
+                      src="/abhishek.kabi.26/theory.png"
+                      style={{ height: "52px", width: "52px" }}
+                    />
+                  </div>
+                  <p>Tic-Tac-Toe AI</p>
                 </div>
 
-                {gameMenuClicked && (
-                  <div className="game-menu">
-                    <p>1. AI-TicTacToe</p>
-                    <p>2. Wordle</p>
-                    <p>3. Color-Word-Match</p>
+                <div
+                  className={`menu-item-div animate__animated ${
+                    projectsClicked
+                      ? "animate__slideInDown"
+                      : "animate__slideOutUp"
+                  }`}
+                  // onClick={() => handleNavigation("/space")}
+                  style={{ cursor: "pointer", marginLeft: "12px" }}
+                >
+                  <div className="image-cont">
+                    <img
+                      src="/abhishek.kabi.26/theory.png"
+                      style={{ height: "52px", width: "52px" }}
+                    />
                   </div>
-                )}
+                  <p>Wordle</p>
+                </div>
+
+                <div
+                  className={`menu-item-div animate__animated ${
+                    projectsClicked
+                      ? "animate__slideInDown"
+                      : "animate__slideOutUp"
+                  }`}
+                  // onClick={() => handleNavigation("/space")}
+                  style={{ cursor: "pointer", marginLeft: "12px" }}
+                >
+                  <div className="image-cont">
+                    <img
+                      src="/abhishek.kabi.26/theory.png"
+                      style={{ height: "52px", width: "52px" }}
+                    />
+                  </div>
+                  <p>Color-Word Match</p>
+                </div>
+
+                {/* {shouldRenderGM && (
+                  <div>
+                    <div
+                      className={`game-menu animate__animated ${
+                        gameMenuClicked
+                          ? "animate__zoomIn"
+                          : "animate__slideOutUp"
+                      }`}
+                    >
+                      <p>1. AI-TicTacToe</p>
+                      <p>2. Wordle</p>
+                      <p>3. Color-Word-Match</p>
+                    </div>
+                  </div>
+                )} */}
               </div>
             </div>
           )}
@@ -187,7 +294,7 @@ const Sidebar = ({
           <div>
             <i
               className="fa-solid fa-file-pdf"
-              style={{ color: "#000033", fontSize: "40px" }}
+              style={{ fontSize: "40px" }}
             ></i>
           </div>
           <div>
@@ -199,10 +306,7 @@ const Sidebar = ({
 
         <div className="github-link-button">
           <div>
-            <i
-              className="fa-brands fa-github"
-              style={{ color: "#000033", fontSize: "40px" }}
-            ></i>
+            <i className="fa-brands fa-github" style={{ fontSize: "40px" }}></i>
           </div>
           <div>
             <button className="github-link">Check out my Github</button>

@@ -75,8 +75,8 @@ function Profile() {
           <button className="profile-action-button blue">
             <i class="fa-solid fa-user-plus white"></i> Add friend
           </button>
-          <button className="profile-action-button">
-            <i class="fa-brands fa-facebook-messenger"></i> Message
+          <button className="profile-action-button themed">
+            <i class="fa-brands fa-facebook-messenger "></i> Message
           </button>
         </div>
 
@@ -116,10 +116,10 @@ function Profile() {
           <div className="kontainer">
             <div className="details-holder-icons">
               <div>
-                <i class="fa-regular fa-map"></i>
+                <i class="fa-regular fa-map proficon"></i>
               </div>
               <div>
-                <i class="fa-solid fa-graduation-cap"></i>
+                <i class="fa-solid fa-graduation-cap proficon"></i>
               </div>
             </div>
             <div className="details-holder-dtls">
@@ -143,7 +143,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="jscore" onClick={() => handleSkillToggle("jscore")}>
-                  <span style={{ color: "black" }}>JavaScript (Core)</span>
+                  <span>JavaScript (Core)</span>
                 </p>{" "}
               </div>
               {currentID === "jscore" && (
@@ -251,7 +251,7 @@ function Profile() {
                   id="reactcore"
                   onClick={() => handleSkillToggle("reactcore")}
                 >
-                  <span style={{ color: "black" }}>React Core</span>
+                  <span>React Core</span>
                 </p>
               </div>
               {currentID === "reactcore" && (
@@ -328,7 +328,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="rncore" onClick={() => handleSkillToggle("rncore")}>
-                  <span style={{ color: "black" }}>React Native Core</span>
+                  <span>React Native Core</span>
                 </p>
               </div>
               {currentID === "rncore" && (
@@ -427,7 +427,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="expo" onClick={() => handleSkillToggle("expo")}>
-                  <span style={{ color: "black" }}>Expo</span>
+                  <span>Expo</span>
                 </p>
               </div>
               {currentID === "expo" && (
@@ -480,7 +480,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="firebase" onClick={() => handleSkillToggle("firebase")}>
-                  <span style={{ color: "black" }}>Firebase</span>
+                  <span>Firebase</span>
                 </p>
               </div>
               {currentID === "firebase" && (
@@ -541,7 +541,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="backend" onClick={() => handleSkillToggle("backend")}>
-                  <span style={{ color: "black" }}>Backend Concepts</span>
+                  <span>Backend Concepts</span>
                 </p>
               </div>
               {currentID === "backend" && (
@@ -595,7 +595,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="git" onClick={() => handleSkillToggle("git")}>
-                  <span style={{ color: "black" }}>Git & GitHub</span>
+                  <span>Git & GitHub</span>
                 </p>
               </div>
               {currentID === "git" && (
@@ -643,7 +643,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="deploy" onClick={() => handleSkillToggle("deploy")}>
-                  <span style={{ color: "black" }}>Deployment & Hosting</span>
+                  <span>Deployment & Hosting</span>
                 </p>
               </div>
               {currentID === "deploy" && (
@@ -683,9 +683,7 @@ function Profile() {
                   id="scheduling"
                   onClick={() => handleSkillToggle("scheduling")}
                 >
-                  <span style={{ color: "black" }}>
-                    Scheduling & Automation
-                  </span>
+                  <span>Scheduling & Automation</span>
                 </p>
               </div>
               {currentID === "scheduling" && (
@@ -723,9 +721,7 @@ function Profile() {
                   id="application"
                   onClick={() => handleSkillToggle("application")}
                 >
-                  <span style={{ color: "black" }}>
-                    Application Architecture
-                  </span>
+                  <span>Application Architecture</span>
                 </p>
               </div>
               {currentID === "application" && (
@@ -780,7 +776,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="uiux" onClick={() => handleSkillToggle("uiux")}>
-                  <span style={{ color: "black" }}>UI/UX Development</span>
+                  <span>UI/UX Development</span>
                 </p>
               </div>
               {currentID === "uiux" && (
@@ -839,9 +835,7 @@ function Profile() {
                   id="debugging"
                   onClick={() => handleSkillToggle("debugging")}
                 >
-                  <span style={{ color: "black" }}>
-                    Debugging & Problem Solving
-                  </span>
+                  <span>Debugging & Problem Solving</span>
                 </p>
               </div>
               {currentID === "debugging" && (
@@ -887,7 +881,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="growth" onClick={() => handleSkillToggle("growth")}>
-                  <span style={{ color: "black" }}>Current Growth Areas</span>
+                  <span>Current Growth Areas</span>
                 </p>
               </div>
               {currentID === "growth" && (
@@ -944,9 +938,7 @@ function Profile() {
                   </span>{" "}
                 </p>
                 <p id="summary" onClick={() => handleSkillToggle("summary")}>
-                  <span style={{ color: "black" }}>
-                    Current Skill Stack Summary
-                  </span>
+                  <span>Current Skill Stack Summary</span>
                 </p>
               </div>
               {currentID === "summary" && (
@@ -1060,7 +1052,7 @@ function Profile() {
                     <i class="fa-regular fa-thumbs-up"></i>
                   </div>
                   <div>
-                    <p style={{ color: "black" }}>{totalLikes}</p>
+                    <p>{totalLikes}</p>
                   </div>
                 </div>
               </div>

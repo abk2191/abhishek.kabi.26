@@ -10,6 +10,11 @@ function Profile() {
     localStorage.getItem("portfolio-liked") === "true",
   );
   const [totalLikes, setTotalLikes] = useState(0);
+  const [currentID, setCurrentID] = useState("");
+
+  const handleSkillToggle = (id) => {
+    setCurrentID((prev) => (prev === id ? "" : id));
+  };
 
   useEffect(() => {
     loadLikes();
@@ -88,7 +93,7 @@ function Profile() {
               setMyPhotosClicked(false);
             }}
           >
-            Technical Skills
+            All Posts
           </button>
           <button
             className="info-btns"
@@ -102,7 +107,7 @@ function Profile() {
               setMyPhotosClicked(true);
             }}
           >
-            Photos
+            About
           </button>
         </div>
 
@@ -123,6 +128,862 @@ function Profile() {
             </div>
           </div>
         </div>
+
+        <div className="personal-dtls">
+          <h2>Technical Skills</h2>
+          <div className="tech-skills">
+            <div className="tech-skills-div">
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("jscore")}
+                  >
+                    {currentID === "jscore" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="jscore" onClick={() => handleSkillToggle("jscore")}>
+                  <span style={{ color: "black" }}>JavaScript (Core)</span>
+                </p>{" "}
+              </div>
+              {currentID === "jscore" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>Fundamentals:</span>
+                  <br />
+                  ● Variables (let, const)
+                  <br />
+                  ● Functions
+                  <br />
+                  ● Arrow functions
+                  <br />
+                  ● Scope
+                  <br />
+                  ● Template literals
+                  <br />
+                  ● Destructuring
+                  <br />
+                  ● Default parameters
+                  <br />
+                  ● Optional chaining (?.)
+                  <br />
+                  ● Nullish coalescing (??)
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Objects:</span>
+                  <br />
+                  ● Object creation and manipulation
+                  <br />
+                  ● Nested objects
+                  <br />
+                  ● Object spread operator
+                  <br />
+                  ● Updating immutable state
+                  <br />
+                  ● Property access and modification
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Arrays:</span>
+                  <br />
+                  ● map()
+                  <br />
+                  ● filter()
+                  <br />
+                  ● find()
+                  <br />
+                  ● some()
+                  <br />
+                  ● forEach()
+                  <br />
+                  ● Array spreading
+                  <br />
+                  ● Immutable array updates
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Control Flow:</span>
+                  <br />
+                  ● if/else
+                  <br />
+                  ● Conditional rendering logic
+                  <br />
+                  ● Ternary operators
+                  <br />
+                  ● Logical operators
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    Asynchronous Programming:
+                  </span>
+                  <br />
+                  ● Promises
+                  <br />
+                  ● async/await
+                  <br />
+                  ● Handling API/database calls
+                  <br />
+                  ● Firebase async operations
+                  <br />
+                  ● Loading states
+                  <br />
+                  ● Error handling with try/catch
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Data Handling:</span>
+                  <br />
+                  ● JSON structures
+                  <br />
+                  ● Data transformation
+                  <br />
+                  ● State synchronization
+                  <br />● List manipulation
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("reactcore")}
+                  >
+                    {currentID === "reactcore" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p
+                  id="reactcore"
+                  onClick={() => handleSkillToggle("reactcore")}
+                >
+                  <span style={{ color: "black" }}>React Core</span>
+                </p>
+              </div>
+              {currentID === "reactcore" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>Components:</span>
+                  <br />
+                  ● Functional components
+                  <br />
+                  ● Component composition
+                  <br />
+                  ● Reusable UI structures
+                  <br />
+                  ● Component organization
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Props:</span>
+                  <br />
+                  ● Passing props
+                  <br />
+                  ● Prop drilling
+                  <br />
+                  ● Data flow between components
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>State Management:</span>
+                  <br />
+                  ● useState
+                  <br />
+                  ● State updates
+                  <br />
+                  ● Complex state objects
+                  <br />
+                  ● Array state management
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Hooks:</span>
+                  <br />
+                  ● useState
+                  <br />
+                  ● useEffect
+                  <br />
+                  ● Custom logic patterns
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Rendering:</span>
+                  <br />
+                  ● Conditional rendering
+                  <br />
+                  ● Dynamic lists
+                  <br />
+                  ● Key management
+                  <br />
+                  ● UI updates from state changes
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>React Architecture:</span>
+                  <br />
+                  ● Screen separation
+                  <br />
+                  ● Feature organization
+                  <br />
+                  ● Reusable components
+                  <br />● Project structuring
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("rncore")}
+                  >
+                    {currentID === "rncore" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="rncore" onClick={() => handleSkillToggle("rncore")}>
+                  <span style={{ color: "black" }}>React Native Core</span>
+                </p>
+              </div>
+              {currentID === "rncore" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>UI Components:</span>
+                  <br />
+                  ● View
+                  <br />
+                  ● Text
+                  <br />
+                  ● TextInput
+                  <br />
+                  ● ScrollView
+                  <br />
+                  ● FlatList
+                  <br />
+                  ● Touchable components
+                  <br />
+                  ● Modal
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    Mobile UI Development:
+                  </span>
+                  <br />
+                  ● Responsive layouts
+                  <br />
+                  ● Mobile-first design
+                  <br />
+                  ● Form handling
+                  <br />
+                  ● User input management
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Styling:</span>
+                  <br />
+                  ● StyleSheet
+                  <br />
+                  ● Flexbox
+                  <br />
+                  ● Layout design
+                  <br />
+                  ● Dynamic styling
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Navigation Concepts:</span>
+                  <br />
+                  ● Screen transitions
+                  <br />
+                  ● Navigation flow
+                  <br />
+                  ● User experience planning
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    Mobile State Management:
+                  </span>
+                  <br />
+                  ● Screen-level state
+                  <br />
+                  ● Form state
+                  <br />
+                  ● Editor state
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Debugging:</span>
+                  <br />
+                  ● State bugs
+                  <br />
+                  ● UI rendering issues
+                  <br />
+                  ● Data synchronization issues
+                  <br />
+                  ● Property mismatch debugging
+                  <br />
+                  <br />
+                  <em>
+                    Example: Tracked and fixed the Notes editor font bug caused
+                    by:
+                  </em>
+                  <br />
+                  ● Notes storing font
+                  <br />
+                  ● Logic reading fontSize
+                  <br />● Migration and fallback handling
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("expo")}
+                  >
+                    {currentID === "expo" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="expo" onClick={() => handleSkillToggle("expo")}>
+                  <span style={{ color: "black" }}>Expo</span>
+                </p>
+              </div>
+              {currentID === "expo" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>Expo Ecosystem:</span>
+                  <br />
+                  ● Expo project setup
+                  <br />
+                  ● Expo app configuration
+                  <br />
+                  ● Asset management
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>App Configuration:</span>
+                  <br />
+                  ● app.json
+                  <br />
+                  ● Icons
+                  <br />
+                  ● Splash screens
+                  <br />
+                  ● Adaptive icons
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Build & Deployment:</span>
+                  <br />
+                  ● Android builds
+                  <br />
+                  ● APK generation
+                  <br />
+                  ● Deployment preparation
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Expo Debugging:</span>
+                  <br />
+                  ● Adaptive icon troubleshooting
+                  <br />
+                  ● Asset configuration debugging
+                  <br />● Build issue investigation
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("firebase")}
+                  >
+                    {currentID === "firebase" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="firebase" onClick={() => handleSkillToggle("firebase")}>
+                  <span style={{ color: "black" }}>Firebase</span>
+                </p>
+              </div>
+              {currentID === "firebase" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>Authentication:</span>
+                  <br />
+                  ● Firebase Auth
+                  <br />
+                  ● User registration
+                  <br />
+                  ● Login flow
+                  <br />
+                  ● Authentication state handling
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Firestore Database:</span>
+                  <br />
+                  ● Reading documents
+                  <br />
+                  ● Writing documents
+                  <br />
+                  ● Updating documents
+                  <br />
+                  ● Deleting documents
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    Cloud Data Synchronization:
+                  </span>
+                  <br />
+                  ● User-specific data
+                  <br />
+                  ● Notes synchronization
+                  <br />
+                  ● Lists synchronization
+                  <br />
+                  ● Real-time-ish app data flow
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Data Modeling:</span>
+                  <br />
+                  ● User collections
+                  <br />
+                  ● Note structures
+                  <br />
+                  ● List structures
+                  <br />● Firestore document organization
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("backend")}
+                  >
+                    {currentID === "backend" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="backend" onClick={() => handleSkillToggle("backend")}>
+                  <span style={{ color: "black" }}>Backend Concepts</span>
+                </p>
+              </div>
+              {currentID === "backend" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <em>
+                    Although Firebase handles much of the backend
+                    infrastructure, I've already worked with:
+                  </em>
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Backend Logic:</span>
+                  <br />
+                  ● CRUD operations
+                  <br />
+                  ● User-based data access
+                  <br />
+                  ● Data persistence
+                  <br />
+                  ● State synchronization
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Database Concepts:</span>
+                  <br />
+                  ● Collections
+                  <br />
+                  ● Documents
+                  <br />
+                  ● Querying data
+                  <br />
+                  ● Data relationships
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    Authentication Concepts:
+                  </span>
+                  <br />
+                  ● Session management
+                  <br />
+                  ● User identity
+                  <br />● Protected user data
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("git")}
+                  >
+                    {currentID === "git" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="git" onClick={() => handleSkillToggle("git")}>
+                  <span style={{ color: "black" }}>Git & GitHub</span>
+                </p>
+              </div>
+              {currentID === "git" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>Version Control:</span>
+                  <br />
+                  ● Commits
+                  <br />
+                  ● Repository management
+                  <br />
+                  ● Branch awareness
+                  <br />
+                  ● Change tracking
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>GitHub:</span>
+                  <br />
+                  ● Project hosting
+                  <br />
+                  ● Repository maintenance
+                  <br />
+                  ● Issue investigation
+                  <br />
+                  ● Deployment workflows
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    Open Source Familiarity:
+                  </span>
+                  <br />
+                  ● Reading issues
+                  <br />
+                  ● Debugging community-reported problems
+                  <br />● Comparing repository behavior
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("deploy")}
+                  >
+                    {currentID === "deploy" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="deploy" onClick={() => handleSkillToggle("deploy")}>
+                  <span style={{ color: "black" }}>Deployment & Hosting</span>
+                </p>
+              </div>
+              {currentID === "deploy" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>Railway:</span>
+                  <br />
+                  ● Deployment concepts
+                  <br />
+                  ● Application hosting
+                  <br />
+                  ● Backend service deployment awareness
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    General Deployment Knowledge:
+                  </span>
+                  <br />
+                  ● Production builds
+                  <br />
+                  ● Environment management
+                  <br />
+                  ● Hosting workflows
+                  <br />● Release preparation
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("scheduling")}
+                  >
+                    {currentID === "scheduling" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p
+                  id="scheduling"
+                  onClick={() => handleSkillToggle("scheduling")}
+                >
+                  <span style={{ color: "black" }}>
+                    Scheduling & Automation
+                  </span>
+                </p>
+              </div>
+              {currentID === "scheduling" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>Cron Jobs:</span>
+                  <br />
+                  ● Understanding scheduled tasks
+                  <br />
+                  ● Background execution concepts
+                  <br />
+                  ● Automation workflows
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    General Automation Concepts:
+                  </span>
+                  <br />
+                  ● Timed operations
+                  <br />
+                  ● Periodic updates
+                  <br />● Backend task scheduling
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("application")}
+                  >
+                    {currentID === "application" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p
+                  id="application"
+                  onClick={() => handleSkillToggle("application")}
+                >
+                  <span style={{ color: "black" }}>
+                    Application Architecture
+                  </span>
+                </p>
+              </div>
+              {currentID === "application" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>
+                    Large Project Organization:
+                  </span>
+                  <br />
+                  <em>
+                    Your Space App includes multiple interconnected systems:
+                  </em>
+                  <br />
+                  ● Notes
+                  <br />
+                  ● Lists
+                  <br />
+                  ● Calendar
+                  <br />
+                  ● Mindmap
+                  <br />
+                  ● Archive
+                  <br />
+                  ● Bin/Trash
+                  <br />
+                  ● Authentication
+                  <br />
+                  ● Cloud Sync
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>
+                    Architectural Skills:
+                  </span>
+                  <br />
+                  ● Feature separation
+                  <br />
+                  ● Shared data models
+                  <br />
+                  ● Screen organization
+                  <br />
+                  ● State flow planning
+                  <br />● Cross-feature integration
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("uiux")}
+                  >
+                    {currentID === "uiux" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="uiux" onClick={() => handleSkillToggle("uiux")}>
+                  <span style={{ color: "black" }}>UI/UX Development</span>
+                </p>
+              </div>
+              {currentID === "uiux" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <span style={{ color: "#1877f2" }}>
+                    Productivity App Design:
+                  </span>
+                  <br />
+                  ● Note-taking interfaces
+                  <br />
+                  ● List management interfaces
+                  <br />
+                  ● Calendar interfaces
+                  <br />
+                  ● Mindmap interfaces
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>UX Thinking:</span>
+                  <br />
+                  ● User workflows
+                  <br />
+                  ● Editor experiences
+                  <br />
+                  ● Data organization
+                  <br />
+                  ● Feature discoverability
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Animation Planning:</span>
+                  <br />
+                  <em>You've specifically discussed:</em>
+                  <br />
+                  ● Google Keep-style interactions
+                  <br />
+                  ● Note expansion animations
+                  <br />
+                  ● Scale transitions
+                  <br />
+                  ● Fade animations
+                  <br />
+                  ● Shared-element style experiences
+                  <br />● Smooth editor transitions
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("debugging")}
+                  >
+                    {currentID === "debugging" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p
+                  id="debugging"
+                  onClick={() => handleSkillToggle("debugging")}
+                >
+                  <span style={{ color: "black" }}>
+                    Debugging & Problem Solving
+                  </span>
+                </p>
+              </div>
+              {currentID === "debugging" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <em>One of your strongest demonstrated skills.</em>
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Debugging Areas:</span>
+                  <br />
+                  ● State bugs
+                  <br />
+                  ● Rendering bugs
+                  <br />
+                  ● Data-model mismatches
+                  <br />
+                  ● Firebase synchronization issues
+                  <br />
+                  ● Expo configuration issues
+                  <br />
+                  ● UI behavior issues
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Debugging Approach:</span>
+                  <br />
+                  ● Trace data flow
+                  <br />
+                  ● Inspect object structures
+                  <br />
+                  ● Verify property names
+                  <br />
+                  ● Compare expected vs actual state
+                  <br />● Test assumptions systematically
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("growth")}
+                  >
+                    {currentID === "growth" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="growth" onClick={() => handleSkillToggle("growth")}>
+                  <span style={{ color: "black" }}>Current Growth Areas</span>
+                </p>
+              </div>
+              {currentID === "growth" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  <em>These are areas I'm interested in moving toward:</em>
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Near-Term:</span>
+                  <br />
+                  ● Advanced React Native
+                  <br />
+                  ● TypeScript
+                  <br />
+                  ● Better application architecture
+                  <br />
+                  ● Performance optimization
+                  <br />
+                  ● Technical interview preparation
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Mid-Term:</span>
+                  <br />
+                  ● Android Development
+                  <br />
+                  ● Kotlin
+                  <br />
+                  ● Native Android APIs
+                  <br />
+                  <br />
+                  <span style={{ color: "#1877f2" }}>Long-Term:</span>
+                  <br />
+                  ● AOSP
+                  <br />
+                  ● Linux kernels
+                  <br />
+                  ● Embedded systems
+                  <br />
+                  ● Raspberry Pi
+                  <br />
+                  ● Hardware programming
+                  <br />
+                  ● Electronics
+                  <br />● Device/phone development
+                </p>
+              )}
+
+              <div className="flex-row">
+                <p>
+                  <span
+                    className="circle"
+                    onClick={() => handleSkillToggle("summary")}
+                  >
+                    {currentID === "summary" ? "-" : "+"}
+                  </span>{" "}
+                </p>
+                <p id="summary" onClick={() => handleSkillToggle("summary")}>
+                  <span style={{ color: "black" }}>
+                    Current Skill Stack Summary
+                  </span>
+                </p>
+              </div>
+              {currentID === "summary" && (
+                <p style={{ marginBottom: "15px", marginLeft: "12px" }}>
+                  Frontend: JavaScript • React • React Native • Expo
+                  <br />
+                  <br />
+                  Backend: Firebase • Authentication • Firestore
+                  <br />
+                  <br />
+                  Development Tools: Git • GitHub
+                  <br />
+                  <br />
+                  Deployment: Railway • Mobile app deployment
+                  <br />
+                  <br />
+                  Architecture: Multi-feature application design • Cloud
+                  synchronization • State management
+                  <br />
+                  <br />
+                  Strengths:
+                  <br />
+                  ● Building real projects
+                  <br />
+                  ● Debugging
+                  <br />
+                  ● UI/UX thinking
+                  <br />
+                  ● Feature integration
+                  <br />
+                  ● Persistence on complex problems
+                  <br />
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
         <div className="plastic-wrapper">
           {techSkillClicked && (
             <div className="facebook-post">
@@ -135,8 +996,10 @@ function Profile() {
                     <div>
                       <div>
                         <p>
-                          <strong>Abhishek kabi</strong>{" "}
-                          <span style={{ color: "gray" }}>posted</span>
+                          Abhishek kabi{" "}
+                          <span style={{ color: "gray", fontSize: "12px" }}>
+                            Updated his profile picture
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -146,7 +1009,7 @@ function Profile() {
                         style={{
                           color: "gray",
                           fontSize: "12px",
-                          marginLeft: "-75px",
+                          marginLeft: "-124px",
                         }}
                       >
                         8 Jun 2026
@@ -160,833 +1023,13 @@ function Profile() {
                 </div>
               </div>
               <div className="post-text">
-                <p>All my tech skills...📱💻</p>
+                <p>Just another day building software...📱💻</p>
               </div>
-              <div className="tech-skills">
-                <div>
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>1. JavaScript (Core):</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Fundamentals:</strong>
-                    </span>
-                    <br />
-                    ● Variables (let, const)
-                    <br />
-                    ● Functions
-                    <br />
-                    ● Arrow functions
-                    <br />
-                    ● Scope
-                    <br />
-                    ● Template literals
-                    <br />
-                    ● Destructuring
-                    <br />
-                    ● Default parameters
-                    <br />
-                    ● Optional chaining (?.)
-                    <br />
-                    ● Nullish coalescing (??)
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Objects:</strong>
-                    </span>
-                    <br />
-                    ● Object creation and manipulation
-                    <br />
-                    ● Nested objects
-                    <br />
-                    ● Object spread operator
-                    <br />
-                    ● Updating immutable state
-                    <br />
-                    ● Property access and modification
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Arrays:</strong>
-                    </span>
-                    <br />
-                    ● map()
-                    <br />
-                    ● filter()
-                    <br />
-                    ● find()
-                    <br />
-                    ● some()
-                    <br />
-                    ● forEach()
-                    <br />
-                    ● Array spreading
-                    <br />
-                    ● Immutable array updates
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Control Flow:</strong>
-                    </span>
-                    <br />
-                    ● if/else
-                    <br />
-                    ● Conditional rendering logic
-                    <br />
-                    ● Ternary operators
-                    <br />
-                    ● Logical operators
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Asynchronous Programming:</strong>
-                    </span>
-                    <br />
-                    ● Promises
-                    <br />
-                    ● async/await
-                    <br />
-                    ● Handling API/database calls
-                    <br />
-                    ● Firebase async operations
-                    <br />
-                    ● Loading states
-                    <br />
-                    ● Error handling with try/catch
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Data Handling:</strong>
-                    </span>
-                    <br />
-                    ● JSON structures
-                    <br />
-                    ● Data transformation
-                    <br />
-                    ● State synchronization
-                    <br />● List manipulation
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
 
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>2. React Core:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Components:</strong>
-                    </span>
-                    <br />
-                    ● Functional components
-                    <br />
-                    ● Component composition
-                    <br />
-                    ● Reusable UI structures
-                    <br />
-                    ● Component organization
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Props:</strong>
-                    </span>
-                    <br />
-                    ● Passing props
-                    <br />
-                    ● Prop drilling
-                    <br />
-                    ● Data flow between components
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>State Management:</strong>
-                    </span>
-                    <br />
-                    ● useState
-                    <br />
-                    ● State updates
-                    <br />
-                    ● Complex state objects
-                    <br />
-                    ● Array state management
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Hooks:</strong>
-                    </span>
-                    <br />
-                    ● useState
-                    <br />
-                    ● useEffect
-                    <br />
-                    ● Custom logic patterns
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Rendering:</strong>
-                    </span>
-                    <br />
-                    ● Conditional rendering
-                    <br />
-                    ● Dynamic lists
-                    <br />
-                    ● Key management
-                    <br />
-                    ● UI updates from state changes
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>React Architecture:</strong>
-                    </span>
-                    <br />
-                    ● Screen separation
-                    <br />
-                    ● Feature organization
-                    <br />
-                    ● Reusable components
-                    <br />● Project structuring
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>3. React Native Core:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>UI Components:</strong>
-                    </span>
-                    <br />
-                    ● View
-                    <br />
-                    ● Text
-                    <br />
-                    ● TextInput
-                    <br />
-                    ● ScrollView
-                    <br />
-                    ● FlatList
-                    <br />
-                    ● Touchable components
-                    <br />
-                    ● Modal
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Mobile UI Development:</strong>
-                    </span>
-                    <br />
-                    ● Responsive layouts
-                    <br />
-                    ● Mobile-first design
-                    <br />
-                    ● Form handling
-                    <br />
-                    ● User input management
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Styling:</strong>
-                    </span>
-                    <br />
-                    ● StyleSheet
-                    <br />
-                    ● Flexbox
-                    <br />
-                    ● Layout design
-                    <br />
-                    ● Dynamic styling
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Navigation Concepts:</strong>
-                    </span>
-                    <br />
-                    ● Screen transitions
-                    <br />
-                    ● Navigation flow
-                    <br />
-                    ● User experience planning
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Mobile State Management:</strong>
-                    </span>
-                    <br />
-                    ● Screen-level state
-                    <br />
-                    ● Form state
-                    <br />
-                    ● Editor state
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Debugging:</strong>
-                    </span>
-                    <br />
-                    ● State bugs
-                    <br />
-                    ● UI rendering issues
-                    <br />
-                    ● Data synchronization issues
-                    <br />
-                    ● Property mismatch debugging
-                    <br />
-                    <br />
-                    <em>
-                      Example: Tracked and fixed the Notes editor font bug
-                      caused by:
-                    </em>
-                    <br />
-                    ● Notes storing font
-                    <br />
-                    ● Logic reading fontSize
-                    <br />● Migration and fallback handling
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>4. Expo:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Expo Ecosystem:</strong>
-                    </span>
-                    <br />
-                    ● Expo project setup
-                    <br />
-                    ● Expo app configuration
-                    <br />
-                    ● Asset management
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>App Configuration:</strong>
-                    </span>
-                    <br />
-                    ● app.json
-                    <br />
-                    ● Icons
-                    <br />
-                    ● Splash screens
-                    <br />
-                    ● Adaptive icons
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Build & Deployment:</strong>
-                    </span>
-                    <br />
-                    ● Android builds
-                    <br />
-                    ● APK generation
-                    <br />
-                    ● Deployment preparation
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Expo Debugging:</strong>
-                    </span>
-                    <br />
-                    ● Adaptive icon troubleshooting
-                    <br />
-                    ● Asset configuration debugging
-                    <br />● Build issue investigation
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>5. Firebase:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Authentication:</strong>
-                    </span>
-                    <br />
-                    ● Firebase Auth
-                    <br />
-                    ● User registration
-                    <br />
-                    ● Login flow
-                    <br />
-                    ● Authentication state handling
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Firestore Database:</strong>
-                    </span>
-                    <br />
-                    ● Reading documents
-                    <br />
-                    ● Writing documents
-                    <br />
-                    ● Updating documents
-                    <br />
-                    ● Deleting documents
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Cloud Data Synchronization:</strong>
-                    </span>
-                    <br />
-                    ● User-specific data
-                    <br />
-                    ● Notes synchronization
-                    <br />
-                    ● Lists synchronization
-                    <br />
-                    ● Real-time-ish app data flow
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Data Modeling:</strong>
-                    </span>
-                    <br />
-                    ● User collections
-                    <br />
-                    ● Note structures
-                    <br />
-                    ● List structures
-                    <br />● Firestore document organization
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>6. Backend Concepts:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <em>
-                      Although Firebase handles much of the backend
-                      infrastructure, I've already worked with:
-                    </em>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Backend Logic:</strong>
-                    </span>
-                    <br />
-                    ● CRUD operations
-                    <br />
-                    ● User-based data access
-                    <br />
-                    ● Data persistence
-                    <br />
-                    ● State synchronization
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Database Concepts:</strong>
-                    </span>
-                    <br />
-                    ● Collections
-                    <br />
-                    ● Documents
-                    <br />
-                    ● Querying data
-                    <br />
-                    ● Data relationships
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Authentication Concepts:</strong>
-                    </span>
-                    <br />
-                    ● Session management
-                    <br />
-                    ● User identity
-                    <br />● Protected user data
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>7. Git & GitHub:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Version Control:</strong>
-                    </span>
-                    <br />
-                    ● Commits
-                    <br />
-                    ● Repository management
-                    <br />
-                    ● Branch awareness
-                    <br />
-                    ● Change tracking
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>GitHub:</strong>
-                    </span>
-                    <br />
-                    ● Project hosting
-                    <br />
-                    ● Repository maintenance
-                    <br />
-                    ● Issue investigation
-                    <br />
-                    ● Deployment workflows
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Open Source Familiarity:</strong>
-                    </span>
-                    <br />
-                    ● Reading issues
-                    <br />
-                    ● Debugging community-reported problems
-                    <br />● Comparing repository behavior
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>8. Deployment & Hosting:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Railway:</strong>
-                    </span>
-                    <br />
-                    ● Deployment concepts
-                    <br />
-                    ● Application hosting
-                    <br />
-                    ● Backend service deployment awareness
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>General Deployment Knowledge:</strong>
-                    </span>
-                    <br />
-                    ● Production builds
-                    <br />
-                    ● Environment management
-                    <br />
-                    ● Hosting workflows
-                    <br />● Release preparation
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>9. Scheduling & Automation:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Cron Jobs:</strong>
-                    </span>
-                    <br />
-                    ● Understanding scheduled tasks
-                    <br />
-                    ● Background execution concepts
-                    <br />
-                    ● Automation workflows
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>General Automation Concepts:</strong>
-                    </span>
-                    <br />
-                    ● Timed operations
-                    <br />
-                    ● Periodic updates
-                    <br />● Backend task scheduling
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>10. Application Architecture:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Large Project Organization:</strong>
-                    </span>
-                    <br />
-                    <em>
-                      Your Space App includes multiple interconnected systems:
-                    </em>
-                    <br />
-                    ● Notes
-                    <br />
-                    ● Lists
-                    <br />
-                    ● Calendar
-                    <br />
-                    ● Mindmap
-                    <br />
-                    ● Archive
-                    <br />
-                    ● Bin/Trash
-                    <br />
-                    ● Authentication
-                    <br />
-                    ● Cloud Sync
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Architectural Skills:</strong>
-                    </span>
-                    <br />
-                    ● Feature separation
-                    <br />
-                    ● Shared data models
-                    <br />
-                    ● Screen organization
-                    <br />
-                    ● State flow planning
-                    <br />● Cross-feature integration
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>11. UI/UX Development:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Productivity App Design:</strong>
-                    </span>
-                    <br />
-                    ● Note-taking interfaces
-                    <br />
-                    ● List management interfaces
-                    <br />
-                    ● Calendar interfaces
-                    <br />
-                    ● Mindmap interfaces
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>UX Thinking:</strong>
-                    </span>
-                    <br />
-                    ● User workflows
-                    <br />
-                    ● Editor experiences
-                    <br />
-                    ● Data organization
-                    <br />
-                    ● Feature discoverability
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Animation Planning:</strong>
-                    </span>
-                    <br />
-                    <em>You've specifically discussed:</em>
-                    <br />
-                    ● Google Keep-style interactions
-                    <br />
-                    ● Note expansion animations
-                    <br />
-                    ● Scale transitions
-                    <br />
-                    ● Fade animations
-                    <br />
-                    ● Shared-element style experiences
-                    <br />● Smooth editor transitions
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>12. Debugging & Problem Solving:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <em>One of your strongest demonstrated skills.</em>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Debugging Areas:</strong>
-                    </span>
-                    <br />
-                    ● State bugs
-                    <br />
-                    ● Rendering bugs
-                    <br />
-                    ● Data-model mismatches
-                    <br />
-                    ● Firebase synchronization issues
-                    <br />
-                    ● Expo configuration issues
-                    <br />
-                    ● UI behavior issues
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Debugging Approach:</strong>
-                    </span>
-                    <br />
-                    ● Trace data flow
-                    <br />
-                    ● Inspect object structures
-                    <br />
-                    ● Verify property names
-                    <br />
-                    ● Compare expected vs actual state
-                    <br />● Test assumptions systematically
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>13. Current Growth Areas:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <em>These are areas I'm interested in moving toward:</em>
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Near-Term:</strong>
-                    </span>
-                    <br />
-                    ● Advanced React Native
-                    <br />
-                    ● TypeScript
-                    <br />
-                    ● Better application architecture
-                    <br />
-                    ● Performance optimization
-                    <br />
-                    ● Technical interview preparation
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Mid-Term:</strong>
-                    </span>
-                    <br />
-                    ● Android Development
-                    <br />
-                    ● Kotlin
-                    <br />
-                    ● Native Android APIs
-                    <br />
-                    <br />
-                    <span style={{ color: "#1877f2" }}>
-                      <strong>Long-Term:</strong>
-                    </span>
-                    <br />
-                    ● AOSP
-                    <br />
-                    ● Linux kernels
-                    <br />
-                    ● Embedded systems
-                    <br />
-                    ● Raspberry Pi
-                    <br />
-                    ● Hardware programming
-                    <br />
-                    ● Electronics
-                    <br />● Device/phone development
-                  </p>
-                  <br />
-
-                  <p>
-                    <span style={{ color: "#95b22c" }}>
-                      <strong>Current Skill Stack Summary:</strong>
-                    </span>
-                    <br />
-                    <br />
-                    <strong>Frontend:</strong> JavaScript • React • React Native
-                    • Expo
-                    <br />
-                    <br />
-                    <strong>Backend:</strong> Firebase • Authentication •
-                    Firestore
-                    <br />
-                    <br />
-                    <strong>Development Tools:</strong> Git • GitHub
-                    <br />
-                    <br />
-                    <strong>Deployment:</strong> Railway • Mobile app deployment
-                    <br />
-                    <br />
-                    <strong>Architecture:</strong> Multi-feature application
-                    design • Cloud synchronization • State management
-                    <br />
-                    <br />
-                    <strong>Strengths:</strong>
-                    <br />
-                    ● Building real projects
-                    <br />
-                    ● Debugging
-                    <br />
-                    ● UI/UX thinking
-                    <br />
-                    ● Feature integration
-                    <br />
-                    ● Persistence on complex problems
-                    <br />
-                  </p>
-                </div>
+              <div className="post-wrapper">
+                <div className="profile-picture-small-post"></div>
               </div>
+
               <div className="placeholder"></div>
               <div className="reaction-buttons-div">
                 <div className="reaction-button">
@@ -1017,7 +1060,7 @@ function Profile() {
                     <i class="fa-regular fa-thumbs-up"></i>
                   </div>
                   <div>
-                    <p style={{ color: "#95b22c" }}>{totalLikes}</p>
+                    <p style={{ color: "black" }}>{totalLikes}</p>
                   </div>
                 </div>
               </div>

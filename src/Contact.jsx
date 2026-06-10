@@ -1,35 +1,110 @@
 function Contact() {
   return (
     <>
-      <div className="Contact-container" style={{ color: "black" }}>
-        <div className="whatsapp-container">
-          <div className="whatsapp-contact-div">
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>Send me a text on WhatsApp</p>
+      <div className="container-contact">
+        <div className="block-one">
+          <div className="heading-contact-text">
+            <p>CONTACT</p>
           </div>
-          <button className="Whatsapp-button">
-            <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
-            WhatsApp
-          </button>
-        </div>
-
-        <div className="gmail-container">
-          <div className="gmail-contact-div">
-            <i class="fa-solid fa-at"></i>
-            <p>Write me an Email</p>
+          <div className="heading-blockone">
+            <h1>Let's build</h1>
+            <h1>something great</h1>
           </div>
-          <button className="gmail-button">
-            <i class="fa-brands fa-google gmail-icon"></i>Gmail
-          </button>
-        </div>
+          <div className="messgg">
+            <p>
+              Have a project in mind or just want to say hello? <br /> Would
+              love to hear from you.
+            </p>
+          </div>
 
-        <div className="social-media-div">
-          <i class="fa-brands fa-facebook"></i>
-          <p>Follow me on social media</p>
+          <div className="contact-details-div">
+            <div className="contact-dtls">
+              <div className="email-details">
+                <div className="mail-desc-wrapper">
+                  <div className="mail-icon-wrapper">
+                    <div className="mail-icon">
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                  </div>
+                  <div className="mail-desc">
+                    <p style={{ fontWeight: "bold" }}>Email</p>
+                    <p style={{ color: "gray" }}>abhishek.kabi.21@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="email-details">
+                <div className="mail-desc-wrapper">
+                  <div className="mail-icon-wrapper">
+                    <div className="mail-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                  </div>
+                  <div className="mail-desc">
+                    <p style={{ fontWeight: "bold" }}>Phone</p>
+                    <p style={{ color: "gray" }}>+91 9332522166</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="email-details">
+                <div className="mail-desc-wrapper">
+                  <div className="mail-icon-wrapper">
+                    <div className="mail-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                  </div>
+                  <div className="mail-desc">
+                    <p style={{ fontWeight: "bold" }}>Location</p>
+                    <p style={{ color: "gray" }}>Bangalore, India.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+
+            <i class="fa-brands fa-discord"></i>
+          </div>
         </div>
-        <div className="social-media-icons">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
+        <div className="block-two">
+          <div className="name-and-mail-wrapper">
+            <div className="flex-field">
+              <p>Your Name</p>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="header-input"
+              />
+            </div>
+            <div className="flex-field">
+              <p>Your Email</p>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="header-input"
+              />
+            </div>
+          </div>
+          <div className="flex-field">
+            <p>Subject</p>
+            <input
+              type="text"
+              placeholder="Enter subject"
+              className="header-input-subject"
+            />
+          </div>
+          <div className="flex-field">
+            <p>Message</p>
+            <textarea type="text" className="header-input-textarea" />
+          </div>
+          <div className="Send-message-btn">
+            <button className="Send-btn">Send Message</button>
+          </div>
         </div>
       </div>
     </>

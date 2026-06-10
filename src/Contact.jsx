@@ -12,8 +12,8 @@ function Contact() {
           </div>
           <div className="messgg">
             <p>
-              Have a project in mind or just want to say hello? <br /> Would
-              love to hear from you.
+              Have a project in mind or just want to say hello? Would love to
+              hear from you.
             </p>
           </div>
 

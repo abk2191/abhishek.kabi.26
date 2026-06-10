@@ -25,14 +25,16 @@
   --postdivider: rgb(202, 201, 201);
   --prof-btn-msg: rgb(228, 225, 225);
   --fb-post: rgb(202, 201, 201);
+  --intro-circle: red;
 }
 
 /* Dark theme - black background */
 [data-theme="dark"] {
+  --intro-circle: gold;
   --fb-post: rgb(88, 87, 87);
   --postdivider: #3a3a3a;
   --text-profile: white;
-  --gplay: green;
+  --gplay: gold;
   --bg-primary: black;
   --bg-secondary: black;
   --text-color: #ffffff;
@@ -751,6 +753,7 @@ p {
 
 .proficon {
   color: var(--text-profile) !important;
+  margin-right: 10px;
 }
 
 .kontainer {
@@ -899,7 +902,7 @@ p {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 1px solid var(--text-profile);
+  border: 2px solid var(--intro-circle);
 }
 
 .flex-row {
@@ -908,6 +911,16 @@ p {
   justify-content: left;
   gap: 16px;
   cursor: pointer;
+}
+
+.accordion-heading {
+  color: var(--intro-circle) !important;
+}
+
+.divdr {
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .post-wrapper {
@@ -1457,6 +1470,10 @@ ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .divdr {
+    width: 1000px;
   }
 
   .info-buttons {

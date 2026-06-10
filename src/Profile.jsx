@@ -125,7 +125,17 @@ function Profile() {
           </div>
 
           <div className="personal-dtls">
-            <h2>Technical Skills</h2>
+            <h2>Work</h2>
+            <div className="kontainer">
+              <div className="details-holder-icons">
+                <div>
+                  <i class="fa-solid fa-business-time proficon"></i>
+                </div>
+              </div>
+              <div className="details-holder-dtls">
+                <p>Self Employed</p>
+              </div>
+            </div>
             {/* <div className="tech-skills">
               <div className="tech-skills-div">
                 <div className="flex-row">

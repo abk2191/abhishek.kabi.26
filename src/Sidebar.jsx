@@ -194,11 +194,11 @@ const Sidebar = ({
                 >
                   <div className="image-cont">
                     <img
-                      src="/abhishek.kabi.26/theory.png"
-                      style={{ height: "52px", width: "52px" }}
+                      src="/abhishek.kabi.26/tic-tac-toe.png"
+                      style={{ height: "36px", width: "36px" }}
                     />
                   </div>
-                  <p>Tic-Tac-Toe AI</p>
+                  <p>Tic-Tac-Toe AI (PWA)</p>
                 </div>
 
                 <div
@@ -212,11 +212,11 @@ const Sidebar = ({
                 >
                   <div className="image-cont">
                     <img
-                      src="/abhishek.kabi.26/theory.png"
-                      style={{ height: "52px", width: "52px" }}
+                      src="/abhishek.kabi.26/wordle.png"
+                      style={{ height: "28px", width: "28px" }}
                     />
                   </div>
-                  <p>Wordle</p>
+                  <p>Wordle (PWA)</p>
                 </div>
 
                 <div
@@ -230,11 +230,11 @@ const Sidebar = ({
                 >
                   <div className="image-cont">
                     <img
-                      src="/abhishek.kabi.26/theory.png"
-                      style={{ height: "52px", width: "52px" }}
+                      src="/abhishek.kabi.26/color-match.png"
+                      style={{ height: "29px", width: "29px" }}
                     />
                   </div>
-                  <p>Color-Word Match</p>
+                  <p>Color-Word Match (PWA)</p>
                 </div>
 
                 {/* {shouldRenderGM && (

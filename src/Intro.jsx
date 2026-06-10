@@ -55,12 +55,13 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
         <div className="tech-heading">
           <p>Tech</p>
         </div>
+        <div className="divdr"></div>
         <div className="tech-skills">
           <div className="tech-skills-div">
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("jscore")}
                 >
                   {currentID === "jscore" ? "-" : "+"}
@@ -171,7 +172,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("reactcore")}
                 >
                   {currentID === "reactcore" ? "-" : "+"}
@@ -254,7 +255,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("rncore")}
                 >
                   {currentID === "rncore" ? "-" : "+"}
@@ -342,10 +343,6 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 ● Property mismatch debugging
                 <br />
                 <br />
-                <em>
-                  Example: Tracked and fixed the Notes editor font bug caused
-                  by:
-                </em>
                 <br />
                 ● Notes storing font
                 <br />
@@ -357,7 +354,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading "
                   onClick={() => handleSkillToggle("expo")}
                 >
                   {currentID === "expo" ? "-" : "+"}
@@ -416,7 +413,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("firebase")}
                 >
                   {currentID === "firebase" ? "-" : "+"}
@@ -483,7 +480,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("backend")}
                 >
                   {currentID === "backend" ? "-" : "+"}
@@ -501,12 +498,6 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                   textAlign: "left",
                 }}
               >
-                <em>
-                  Although Firebase handles much of the backend infrastructure,
-                  I've already worked with:
-                </em>
-                <br />
-                <br />
                 <span style={{ color: "#1877f2" }}>Backend Logic:</span>
                 <br />
                 ● CRUD operations
@@ -543,7 +534,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("git")}
                 >
                   {currentID === "git" ? "-" : "+"}
@@ -597,7 +588,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("deploy")}
                 >
                   {currentID === "deploy" ? "-" : "+"}
@@ -640,7 +631,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("scheduling")}
                 >
                   {currentID === "scheduling" ? "-" : "+"}
@@ -684,7 +675,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("application")}
                 >
                   {currentID === "application" ? "-" : "+"}
@@ -708,11 +699,6 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 <span style={{ color: "#1877f2" }}>
                   Large Project Organization:
                 </span>
-                <br />
-                <em>
-                  Your Space App includes multiple interconnected systems:
-                </em>
-                <br />
                 ● Notes
                 <br />
                 ● Lists
@@ -746,7 +732,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("uiux")}
                 >
                   {currentID === "uiux" ? "-" : "+"}
@@ -808,7 +794,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("debugging")}
                 >
                   {currentID === "debugging" ? "-" : "+"}
@@ -826,9 +812,6 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                   textAlign: "left",
                 }}
               >
-                <em>One of your strongest demonstrated skills.</em>
-                <br />
-                <br />
                 <span style={{ color: "#1877f2" }}>Debugging Areas:</span>
                 <br />
                 ● State bugs
@@ -860,7 +843,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             <div className="flex-row">
               <p>
                 <span
-                  className="circle"
+                  className="circle accordion-heading"
                   onClick={() => handleSkillToggle("summary")}
                 >
                   {currentID === "summary" ? "-" : "+"}

@@ -24,10 +24,12 @@
   --text-profile: black;
   --postdivider: rgb(202, 201, 201);
   --prof-btn-msg: rgb(228, 225, 225);
+  --fb-post: rgb(202, 201, 201);
 }
 
 /* Dark theme - black background */
 [data-theme="dark"] {
+  --fb-post: rgb(88, 87, 87);
   --postdivider: #3a3a3a;
   --text-profile: white;
   --gplay: green;
@@ -744,6 +746,7 @@ p {
 
 .flex-row p {
   color: var(--text-profile);
+  font-size: 27px;
 }
 
 .proficon {
@@ -834,8 +837,23 @@ p {
   border-radius: 50%;
 }
 
+.tech-skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-heading {
+  margin-top: 20px;
+}
+
+.tech-heading p {
+  font-size: 50px;
+}
+
 .facebook-post {
-  border-top: 3px solid rgb(202, 201, 201);
+  border-top: 3px solid var(--fb-post);
   /* border-bottom: 3px solid rgb(202, 201, 201); */
   width: 100%;
   margin-bottom: 30px;
@@ -888,7 +906,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 10px;
+  gap: 16px;
+  cursor: pointer;
 }
 
 .post-wrapper {
@@ -917,9 +936,10 @@ p {
   margin-left: 15px;
 }
 
-/* .tech-skills {
-  padding: 15px;
-} */
+.tech-skills {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
 .tech-skills-div {
   display: flex;

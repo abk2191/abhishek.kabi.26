@@ -10,11 +10,6 @@ function Profile() {
     localStorage.getItem("portfolio-liked") === "true",
   );
   const [totalLikes, setTotalLikes] = useState(0);
-  const [currentID, setCurrentID] = useState("");
-
-  const handleSkillToggle = (id) => {
-    setCurrentID((prev) => (prev === id ? "" : id));
-  };
 
   useEffect(() => {
     loadLikes();
@@ -131,7 +126,7 @@ function Profile() {
 
           <div className="personal-dtls">
             <h2>Technical Skills</h2>
-            <div className="tech-skills">
+            {/* <div className="tech-skills">
               <div className="tech-skills-div">
                 <div className="flex-row">
                   <p>
@@ -989,7 +984,7 @@ function Profile() {
                   </p>
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="plastic-wrapper">

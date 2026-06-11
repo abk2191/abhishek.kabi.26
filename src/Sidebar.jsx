@@ -76,7 +76,9 @@ const Sidebar = ({
             style={{ cursor: "pointer" }}
           >
             <i className="fa-solid fa-circle-user"></i>
-            <p>Profile ✨</p>
+            <p>
+              Profile <span style={{ fontSize: "16px" }}>(Facebook)</span> ✨
+            </p>
           </div>
 
           <div className="flex-box-one">

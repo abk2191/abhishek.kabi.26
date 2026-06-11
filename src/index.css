@@ -26,10 +26,22 @@
   --prof-btn-msg: rgb(228, 225, 225);
   --fb-post: rgb(202, 201, 201);
   --intro-circle: red;
+  --contact-main-back: whitesmoke;
+  --contact-contact-form: white;
+  --contact-form-text: black;
+  --send-btn-back: #000033;
+  --social-icons: black;
+  --header-input-border: rgb(202, 201, 201);
 }
 
 /* Dark theme - black background */
 [data-theme="dark"] {
+  --header-input-border: gray;
+  --social-icons: white;
+  --send-btn-back: navy;
+  --contact-form-text: white;
+  --contact-contact-form: black;
+  --contact-main-back: #1a1a1a;
   --intro-circle: gold;
   --fb-post: rgb(88, 87, 87);
   --postdivider: #3a3a3a;
@@ -1423,7 +1435,7 @@ ul {
   justify-content: center;
   overflow: hidden;
   gap: 40px;
-  background-color: whitesmoke;
+  background-color: var(--contact-main-back);
 }
 
 .contact-dtls {
@@ -1441,14 +1453,14 @@ ul {
 }
 
 .social-icons i {
-  color: black !important;
+  color: var(--social-icons) !important;
   font-size: 18px;
 }
 
 .block-two p {
   font-family: "Smooch Sans", sans-serif;
   font-size: 20px;
-  color: #000033;
+  color: var(--contact-form-text);
 }
 
 .block-one {
@@ -1459,13 +1471,13 @@ ul {
 .block-two {
   height: 650px;
   width: 600px;
-  border: 1px solid rgb(237, 237, 237);
+  border: 1px solid var(--contact-contact-form);
   border-radius: 8px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: white;
+  background-color: var(--contact-contact-form);
 }
 
 .flex-field {
@@ -1480,23 +1492,22 @@ ul {
 .header-input {
   height: 60px;
   width: 220px;
-  border: 1px solid rgb(232, 231, 231);
+  border: 1px solid var(--header-input-border);
   border-radius: 6px;
   padding-left: 15px;
 }
 
 .header-input-subject {
   height: 60px;
-  border: 1px solid rgb(232, 231, 231);
+  border: 1px solid var(--header-input-border);
   border-radius: 6px;
   padding-left: 15px;
 }
 
 .header-input-textarea {
   height: 150px;
-  border: 1px solid rgb(232, 231, 231);
+  border: 1px solid var(--header-input-border);
   border-radius: 6px;
-  padding-left: 15px;
 }
 /* p {
   margin: 0;
@@ -1521,8 +1532,10 @@ ul {
 .Send-btn {
   width: 90%;
   height: 40px;
-  background-color: #000033;
+  background-color: var(--send-btn-back);
   color: white;
+  border: none;
+  border-radius: 8px;
 }
 
 .heading-blockone {
@@ -1610,7 +1623,7 @@ ul {
   }
 
   .header-input {
-    width: 300px;
+    width: 270px;
   }
 
   .block-one {

@@ -586,8 +586,6 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 </span>
                 <br />
                 ● Reading issues
-                <br />
-                ● Debugging community-reported problems
                 <br />● Comparing repository behavior
               </p>
             )}
@@ -620,7 +618,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 <br />
                 ● Application hosting
                 <br />
-                ● Backend service deployment awareness
+                ● Backend service deployment
                 <br />
                 <br />
                 <span style={{ color: "#1877f2" }}>
@@ -709,6 +707,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 <span style={{ color: "#1877f2" }}>
                   Large Project Organization:
                 </span>
+                <br />
                 ● Notes
                 <br />
                 ● Lists
@@ -767,7 +766,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 <br />
                 ● Note-taking interfaces
                 <br />
-                ● List management interfaces
+                ● List management
                 <br />
                 ● Calendar interfaces
                 <br />
@@ -797,7 +796,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 <br />
                 ● Fade animations
                 <br />
-                ● Shared-element style experiences
+                ● Shared-elements
                 <br />● Smooth editor transitions
               </p>
             )}
@@ -852,7 +851,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
               </p>
             )}
 
-            <div className="flex-row">
+            {/* <div className="flex-row">
               <p>
                 <span
                   className="circle accordion-heading"
@@ -864,8 +863,8 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
               <p id="summary" onClick={() => handleSkillToggle("summary")}>
                 <span>Current Skill Stack Summary</span>
               </p>
-            </div>
-            {currentID === "summary" && (
+            </div> */}
+            {/* {currentID === "summary" && (
               <p
                 className="font-handler"
                 style={{
@@ -874,16 +873,16 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                   textAlign: "left",
                 }}
               >
-                Frontend: JavaScript • React • React Native • Expo
+                Frontend: JavaScript • React • React Native <br />• Expo
                 <br />
                 <br />
-                Backend: Firebase • Authentication • Firestore
+                Backend: Firebase • Authentication <br />• Firestore
                 <br />
                 <br />
                 Development Tools: Git • GitHub
                 <br />
                 <br />
-                Deployment: Railway • Mobile app deployment
+                Deployment: Railway <br />• Mobile app deployment
                 <br />
                 <br />
                 Strengths:
@@ -899,7 +898,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
                 ● Persistence on complex problems
                 <br />
               </p>
-            )}
+            )} */}
           </div>
         </div>
       </div>

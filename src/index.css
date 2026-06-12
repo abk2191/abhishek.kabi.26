@@ -447,6 +447,8 @@ span {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  padding-bottom: 50px;
 }
 
 .intro-container p {
@@ -1392,6 +1394,7 @@ ul {
   border: 1px solid var(--bg-primary);
   border-radius: 20px;
   background-color: var(--bg-primary);
+  padding-bottom: 50px;
 }
 
 .fa-graduation-cap {

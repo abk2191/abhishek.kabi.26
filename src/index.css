@@ -68,6 +68,12 @@
 
 .andromeda-wrapper {
   background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.get-button {
+  margin-bottom: 30px;
 }
 
 /* Apply background and text colors */
@@ -1478,6 +1484,9 @@ ul {
   flex-direction: column;
   gap: 15px;
   background-color: var(--contact-contact-form);
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.08),
+    0 8px 10px -6px rgba(0, 0, 0, 0.05);
 }
 
 .flex-field {
@@ -1534,7 +1543,7 @@ ul {
 }
 
 .Send-btn {
-  width: 90%;
+  width: 83%;
   height: 40px;
   background-color: var(--send-btn-back);
   color: white;
@@ -1700,7 +1709,49 @@ ul {
   }
 }
 
+.andromeda-wrapper {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures wrapper takes at least full viewport height */
+  padding-bottom: 50px; /* Adds spacing at the bottom */
+}
+
+/* Specifically for Proxima Calculator page */
+.andromeda-wrapper .get-button {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Ensure screenshot wrapper doesn't overflow on desktop */
+.andromeda-screenshot-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allows wrapping if needed */
+  margin-bottom: 40px;
+}
+
+/* Make sure the page content flows properly */
+.andromeda-banner {
+  margin-bottom: 20px;
+}
+
+.page-card-div {
+  margin: 20px 0;
+}
+
 @media (min-width: 769px) {
+  .Send-btn {
+    width: 90%;
+  }
+  .andromeda-wrapper {
+    height: auto;
+  }
+
   .profile-button {
     display: flex;
     align-items: center;

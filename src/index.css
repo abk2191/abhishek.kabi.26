@@ -1489,6 +1489,10 @@ ul {
   padding-top: 30px;
 }
 
+.font-handler {
+  font-size: 24px;
+}
+
 .header-input {
   height: 60px;
   width: 220px;
@@ -1607,6 +1611,9 @@ ul {
 /************************************************************/
 
 @media (max-width: 768px) {
+  .font-handler {
+    font-size: 21px;
+  }
   .flex-field {
     flex-direction: column;
   }

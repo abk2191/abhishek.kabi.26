@@ -13,16 +13,16 @@ function Andromeda({ currentTheme }) {
       <div className="andromeda-wrapper">
         <div className="andromeda-banner">
           <img
-            src="./space-nobg.png"
+            src="/abhishek.kabi.26/theory.png"
             style={{ height: "75px", width: "75px" }}
           />
-          <h2>Space.</h2>
+          <h2>Theory</h2>
         </div>
 
         <div className="page-card-div">
           <div className="page-card">
             <p>
-              Space. is a thoughtful productivity space designed to help you
+              Theory. is a thoughtful productivity space designed to help you
               find clarity and act with intention. <br /> <br />
               We’ve removed the typical digital noise and distractions, offering
               you a quiet environment to plan and stay focused—free from
@@ -30,10 +30,11 @@ function Andromeda({ currentTheme }) {
             </p>
             <br />
             <p>
-              With a modern, intuitive interface, Space. is built to be fast and
-              deeply respectful of your time. It is our goal to support those
-              who value structure and reliability above all else. <br /> <br />
-              Space. simply provides the steady tools you need to stay centered
+              With a modern, intuitive interface, Theory. is built to be fast
+              and deeply respectful of your time. It is our goal to support
+              those who value structure and reliability above all else. <br />{" "}
+              <br />
+              Theory. simply provides the steady tools you need to stay centered
               and accomplish what matters most to you.
             </p>
           </div>
@@ -43,7 +44,7 @@ function Andromeda({ currentTheme }) {
           <div className="page-card">
             <h2>NOTES</h2>
             <p>
-              To help you stay centered as you capture your thoughts, Space.
+              To help you stay centered as you capture your thoughts, Theory.
               offers a beautifully simple space to organize your notes. <br />
               <br />
               You can easily prioritize your ideas by pinning or unpinning them,
@@ -80,7 +81,7 @@ function Andromeda({ currentTheme }) {
           <div className="page-card">
             <h2>LISTS</h2>
             <p>
-              Space. Todo module, a streamlined task manager designed to bring
+              Theory. Todo module, a streamlined task manager designed to bring
               immediate clarity to your busy day. It features a bold, intuitive
               interface that lets you organize your life into distinct,
               color-coded categories with just a few taps. <br /> <br /> You can
@@ -144,7 +145,7 @@ function Andromeda({ currentTheme }) {
           <div className="page-card">
             <h2>HOW TO INSTALL</h2>
             <p>
-              Launch Space. on Google Chrome (preferable) from the button below
+              Launch Theory. on Google Chrome (preferable) from the button below
               and click on the ⋮ . Then click on "Add to home screen" then tap
               "Install"
             </p>
@@ -177,7 +178,7 @@ function Andromeda({ currentTheme }) {
 
         <div className="get-button">
           <button className="contactButton" onClick={handleClick}>
-            Try Space.
+            Try Theory.
             <div className="iconButton">
               <svg
                 height="24"

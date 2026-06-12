@@ -73,6 +73,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "jscore" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -184,6 +185,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "reactcore" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -267,6 +269,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "rncore" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -366,6 +369,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "expo" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -425,6 +429,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "firebase" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -492,6 +497,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "backend" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -546,6 +552,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "git" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -600,6 +607,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "deploy" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -646,6 +654,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "scheduling" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -690,6 +699,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "application" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -744,6 +754,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "uiux" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -806,6 +817,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "debugging" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",
@@ -855,6 +867,7 @@ function Intro({ toggleSidebar, setShouldRender, setProjectsClicked }) {
             </div>
             {currentID === "summary" && (
               <p
+                className="font-handler"
                 style={{
                   marginBottom: "15px",
                   marginLeft: "12px",

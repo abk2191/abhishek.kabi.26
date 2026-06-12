@@ -1445,6 +1445,7 @@ ul {
   overflow: hidden;
   gap: 40px;
   background-color: var(--contact-main-back);
+  padding-bottom: 50px;
 }
 
 .contact-dtls {

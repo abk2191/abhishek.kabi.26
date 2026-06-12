@@ -1394,7 +1394,6 @@ ul {
   border: 1px solid var(--bg-primary);
   border-radius: 20px;
   background-color: var(--bg-primary);
-  padding-bottom: 50px;
 }
 
 .fa-graduation-cap {
@@ -1749,6 +1748,10 @@ ul {
 }
 
 @media (min-width: 769px) {
+  .profile-body {
+    padding-bottom: 50px;
+  }
+
   .Send-btn {
     width: 90%;
   }

@@ -134,6 +134,54 @@
     0 6px 6px var(--shadow-color);
 }
 
+.theory-banner-white {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/white-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.theory-drawing-one {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/draw-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.theory-drawing-two {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/draw-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.theory-banner-dark {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/banner-dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
 .andromeda-screenshot-notes-open {
   width: 20%;
   aspect-ratio: 9 / 19.5;
@@ -458,7 +506,11 @@
   .andromeda-screenshot-proxima-seven,
   .andromeda-screenshot-proxima-eight,
   .scratchpad-banner-one,
-  .scratchpad-banner-two {
+  .scratchpad-banner-two,
+  .theory-banner-dark,
+  .theory-banner-white,
+  .theory-drawing-one,
+  .theory-drawing-two {
     width: 35%;
   }
 

@@ -19,6 +19,11 @@ function Andromeda({ currentTheme }) {
           <h2>Theory</h2>
         </div>
 
+        <div className="andromeda-screenshot-wrapper">
+          <div className="theory-banner-white"></div>
+          <div className="theory-banner-dark"></div>
+        </div>
+
         <div className="page-card-div">
           <div className="page-card">
             <p>
@@ -76,6 +81,27 @@ function Andromeda({ currentTheme }) {
             </p>
           </div>
         </div> */}
+
+        <div className="page-card-div">
+          <div className="page-card">
+            <h2>DRAWING</h2>
+            <p>
+              Theory. Todo module, a streamlined task manager designed to bring
+              immediate clarity to your busy day. It features a bold, intuitive
+              interface that lets you organize your life into distinct,
+              color-coded categories with just a few taps. <br /> <br /> You can
+              easily pin your most critical lists to the top of your dashboard.
+              Adding, completing, and managing individual tasks is incredibly
+              fluid, complete with visual strike-throughs to give you that
+              satisfying sense of progress.
+            </p>
+          </div>
+        </div>
+
+        <div className="andromeda-screenshot-wrapper">
+          <div className="theory-drawing-one"></div>
+          <div className="theory-drawing-two"></div>
+        </div>
 
         <div className="page-card-div">
           <div className="page-card">
@@ -139,41 +165,6 @@ function Andromeda({ currentTheme }) {
         <div className="andromeda-screenshot-wrapper">
           <div className="andromeda-screenshot-mindmap"></div>
           <div className="andromeda-screenshot-mindmap-two"></div>
-        </div>
-
-        <div className="page-card-div">
-          <div className="page-card">
-            <h2>HOW TO INSTALL</h2>
-            <p>
-              Launch Theory. on Google Chrome (preferable) from the button below
-              and click on the ⋮ . Then click on "Add to home screen" then tap
-              "Install"
-            </p>
-            <div className="how-to-install-div">
-              {/* <div className="step-one">
-                <img
-                  src="./installation-step-one.jpg"
-                  alt=""
-                  style={{
-                    height: "250px",
-                    width: "250px",
-                    objectFit: "contain",
-                  }}
-                />
-              </div> */}
-              <div className="step-two">
-                <img
-                  src="./installation-step-two.jpg"
-                  alt=""
-                  style={{
-                    height: "250px",
-                    width: "250px",
-                    objectFit: "contain",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="get-button">

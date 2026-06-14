@@ -1092,7 +1092,39 @@ function Profile() {
               </div>
             </div>
           )}
-          {myPhotosClicked && <div className="my-photos">my-photos</div>}
+          {myPhotosClicked && (
+            <div className="about">
+              <div className="about-text">
+                <h2>About</h2>
+              </div>
+              <div className="photo-wrapper">
+                <div className="profile-picture-about"></div>
+              </div>
+              <p>
+                Hi, I'm Abhishek, a self-taught software developer with a
+                passion for building things and understanding how they work. My
+                journey into technology started with curiosity—taking apart
+                gadgets, exploring computers, and constantly asking questions.{" "}
+                Over the years, that curiosity evolved into a love for software
+                development, especially with React, React Native, and Firebase.{" "}
+                <br /> <br />I enjoy creating products that solve real problems,
+                from productivity apps to interactive web experiences. One of my
+                biggest projects is Space App, a productivity platform that
+                combines notes, lists, calendars, and mind maps into a single
+                experience. I believe that building projects is one of the best
+                ways to learn, which is why I focus on creating complete,
+                working applications rather than just tutorials. Debugging and
+                problem-solving are some of my favorite parts of development
+                because they challenge me to think deeply and creatively. <br />{" "}
+                <br /> Beyond software, I'm interested in Android development,
+                system-level programming, and learning how technology works
+                beneath the surface. Right now, my goal is to continue growing
+                as a developer while turning my skills into meaningful
+                professional opportunities. I'm always excited to learn,
+                improve, and build something better than I built yesterday.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </>

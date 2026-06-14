@@ -32,10 +32,12 @@
   --send-btn-back: #000033;
   --social-icons: black;
   --header-input-border: rgb(202, 201, 201);
+  --about-profile-border: rgb(226, 225, 225);
 }
 
 /* Dark theme - black background */
 [data-theme="dark"] {
+  --about-profile-border: #4d4d4d;
   --header-input-border: gray;
   --social-icons: white;
   --send-btn-back: navy;
@@ -1747,6 +1749,43 @@ ul {
   margin: 20px 0;
 }
 
+.about {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about p {
+  line-height: 1.6;
+  font-size: 25px;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+.profile-picture-about {
+  margin-top: 28px;
+  height: 150px;
+  width: 150px;
+  border: 3px solid var(--about-profile-border);
+  border-radius: 50%;
+  background-image: url("/abhishek.kabi.26/Ami.png"); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%; /* Optional: makes it circular */
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
 @media (min-width: 769px) {
   .profile-body {
     padding-bottom: 50px;
@@ -2033,6 +2072,13 @@ ul {
 /******************************media queries************************************/
 
 @media (max-width: 768px) {
+  .about p {
+    font-size: 20px;
+  }
+
+  .about {
+    padding: 20px;
+  }
   .Contact-container {
     gap: 10px;
   }
